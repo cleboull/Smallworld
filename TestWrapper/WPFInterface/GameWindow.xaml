@@ -1,0 +1,9 @@
+﻿<Window 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:WPFInterface" x:Class="WPFInterface.GameWindow"
+        Title="GameWindow" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" ShowInTaskbar="False">
+    <Grid>
+        <local:DessinerCarte x:Name="FondCarte" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  /> 
+    </Grid>
+</Window>

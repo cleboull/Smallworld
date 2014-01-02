@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B525BC14-F5FB-4526-8D6C-7B65A1A25AEE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SmallWorld</RootNamespace>
+    <AssemblyName>SmallWorld</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\SmallWorld.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Civilization.cs" />
+    <Compile Include="DemoGameBuilder.cs" />
+    <Compile Include="Desert.cs" />
+    <Compile Include="DwarfFactory.cs" />
+    <Compile Include="DwarfUnit.cs" />
+    <Compile Include="Forest.cs" />
+    <Compile Include="GallicFactory.cs" />
+    <Compile Include="GallicUnit.cs" />
+    <Compile Include="Game.cs" />
+    <Compile Include="GameCreator.cs" />
+    <Compile Include="I_DemoGameBuilder.cs" />
+    <Compile Include="I_DwarfFactory.cs" />
+    <Compile Include="I_DwarfUnit.cs" />
+    <Compile Include="I_GallicFactory.cs" />
+    <Compile Include="I_GallicUnit.cs" />
+    <Compile Include="I_Game.cs" />
+    <Compile Include="I_GameCreator.cs" />
+    <Compile Include="I_Desert.cs" />
+    <Compile Include="I_Forest.cs" />
+    <Compile Include="I_MapFactory.cs" />
+    <Compile Include="I_Dwarf.cs" />
+    <Compile Include="I_Gallic.cs" />
+    <Compile Include="I_Map.cs" />
+    <Compile Include="I_Mountain.cs" />
+    <Compile Include="I_Plain.cs" />
+    <Compile Include="I_Player.cs" />
+    <Compile Include="I_Sea.cs" />
+    <Compile Include="I_Slot.cs" />
+    <Compile Include="I_SmallGameBuilder.cs" />
+    <Compile Include="I_StandardGameBuilder.cs" />
+    <Compile Include="I_Civilization.cs" />
+    <Compile Include="I_Unit.cs" />
+    <Compile Include="I_Viking.cs" />
+    <Compile Include="I_VikingFactory.cs" />
+    <Compile Include="I_VikingUnit.cs" />
+    <Compile Include="Map.cs" />
+    <Compile Include="MapFactory.cs" />
+    <Compile Include="Mountain.cs" />
+    <Compile Include="Plain.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sea.cs" />
+    <Compile Include="Slot.cs" />
+    <Compile Include="SmallGameBuilder.cs" />
+    <Compile Include="StandardGameBuilder.cs" />
+    <Compile Include="Unit.cs" />
+    <Compile Include="VikingFactory.cs" />
+    <Compile Include="VikingUnit.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="implementation.cd" />
+    <None Include="interface.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

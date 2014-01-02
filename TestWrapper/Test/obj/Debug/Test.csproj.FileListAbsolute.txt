@@ -1,0 +1,16 @@
+H:\Smallworld\Test wrapper\TestWrapper\Test\bin\Debug\Carte.dll
+H:\Smallworld\Test wrapper\TestWrapper\Test\bin\Debug\Test.dll
+H:\Smallworld\Test wrapper\TestWrapper\Test\bin\Debug\Test.pdb
+H:\Smallworld\Test wrapper\TestWrapper\Test\bin\Debug\mWrapper.dll
+H:\Smallworld\Test wrapper\TestWrapper\Test\bin\Debug\mWrapper.pdb
+H:\Smallworld\Test wrapper\TestWrapper\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+H:\Smallworld\Test wrapper\TestWrapper\Test\obj\Debug\Test.dll
+H:\Smallworld\Test wrapper\TestWrapper\Test\obj\Debug\Test.pdb
+D:\SW temp\TestWrapper\Test\bin\Debug\Carte.dll
+D:\SW temp\TestWrapper\Test\bin\Debug\Test.dll
+D:\SW temp\TestWrapper\Test\bin\Debug\Test.pdb
+D:\SW temp\TestWrapper\Test\bin\Debug\mWrapper.dll
+D:\SW temp\TestWrapper\Test\bin\Debug\mWrapper.pdb
+D:\SW temp\TestWrapper\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+D:\SW temp\TestWrapper\Test\obj\Debug\Test.dll
+D:\SW temp\TestWrapper\Test\obj\Debug\Test.pdb

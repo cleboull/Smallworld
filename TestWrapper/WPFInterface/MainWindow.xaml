@@ -1,0 +1,13 @@
+﻿<Window x:Class="WPFInterface.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="SmallWorld"
+        Height="350"
+        Width="600" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+    
+    <Grid>
+        <Button Content="Démo" HorizontalAlignment="Left" Height="54" Margin="58,224,0,0" VerticalAlignment="Top" Width="149" Click="Create_Map" Tag="Demo"/>
+        <Button Content="Petite" HorizontalAlignment="Left" Height="54" Margin="226,224,0,0" VerticalAlignment="Top" Width="149" Click="Create_Map" Tag="Petite"/>
+        <Button Content="Normale" HorizontalAlignment="Left" Height="54" Margin="395,224,0,0" VerticalAlignment="Top" Width="149" Click="Create_Map" Tag="Normale"/>
+    </Grid>
+</Window>

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmallWorld", "SmallWorld\SmallWorld.csproj", "{B525BC14-F5FB-4526-8D6C-7B65A1A25AEE}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ModelingProject1", "ModelingProject1\ModelingProject1.modelproj", "{582AD4C7-C44C-4F00-BD81-6A1F353B0C22}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B525BC14-F5FB-4526-8D6C-7B65A1A25AEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B525BC14-F5FB-4526-8D6C-7B65A1A25AEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B525BC14-F5FB-4526-8D6C-7B65A1A25AEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B525BC14-F5FB-4526-8D6C-7B65A1A25AEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{582AD4C7-C44C-4F00-BD81-6A1F353B0C22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{582AD4C7-C44C-4F00-BD81-6A1F353B0C22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{582AD4C7-C44C-4F00-BD81-6A1F353B0C22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{582AD4C7-C44C-4F00-BD81-6A1F353B0C22}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
