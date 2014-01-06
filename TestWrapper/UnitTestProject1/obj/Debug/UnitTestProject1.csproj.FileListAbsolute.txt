@@ -13,3 +13,11 @@ D:\SW temp\TestWrapper\UnitTestProject1\obj\Debug\UnitTestProject1.csprojResolve
 D:\SW temp\TestWrapper\UnitTestProject1\obj\Debug\UnitTestProject1.dll
 D:\SW temp\TestWrapper\UnitTestProject1\obj\Debug\UnitTestProject1.pdb
 D:\SW temp\TestWrapper\UnitTestProject1\bin\Debug\Carte.dll
+C:\Users\Brox\Documents\GitHub\Smallworld\TestWrapper\UnitTestProject1\bin\Debug\Carte.dll
+C:\Users\Brox\Documents\GitHub\Smallworld\TestWrapper\UnitTestProject1\bin\Debug\mWrapper.dll
+C:\Users\Brox\Documents\GitHub\Smallworld\TestWrapper\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+C:\Users\Brox\Documents\GitHub\Smallworld\TestWrapper\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+C:\Users\Brox\Documents\GitHub\Smallworld\TestWrapper\UnitTestProject1\bin\Debug\mWrapper.pdb
+C:\Users\Brox\Documents\GitHub\Smallworld\TestWrapper\UnitTestProject1\obj\Debug\UnitTestProject1.csprojResolveAssemblyReference.cache
+C:\Users\Brox\Documents\GitHub\Smallworld\TestWrapper\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+C:\Users\Brox\Documents\GitHub\Smallworld\TestWrapper\UnitTestProject1\obj\Debug\UnitTestProject1.pdb

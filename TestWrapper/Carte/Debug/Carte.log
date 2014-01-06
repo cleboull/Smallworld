@@ -1,17 +1,9 @@
-﻿La génération a démarré 11/12/2013 13:04:09.
-     1>Projet "D:\temp\SW temp\TestWrapper\Carte\Carte.vcxproj" sur le nœud 2 (Build cible(s)).
-     1>InitializeBuildStatus:
-         Création de "Debug\Carte.unsuccessfulbuild", car "AlwaysCreate" a été spécifié.
-       ClCompile:
-         Toutes les sorties sont à jour.
-       Link:
-         Toutes les sorties sont à jour.
-         Carte.vcxproj -> D:\temp\SW temp\TestWrapper\Debug\Carte.dll
-       FinalizeBuildStatus:
-         Suppression du fichier "Debug\Carte.unsuccessfulbuild".
-         Mise à jour de l'horodatage "Debug\Carte.lastbuildstate".
-     1>Génération du projet "D:\temp\SW temp\TestWrapper\Carte\Carte.vcxproj" terminée (Build cible(s)).
+﻿La génération a démarré 06/01/2014 18:16:38.
+     1>Projet "C:\Users\Brox\Documents\GitHub\Smallworld\TestWrapper\Carte\Carte.vcxproj" sur le nœud 2 (Build cible(s)).
+     1>Link:
+         Carte.vcxproj -> C:\Users\Brox\Documents\GitHub\Smallworld\TestWrapper\Debug\Carte.dll
+     1>Génération du projet "C:\Users\Brox\Documents\GitHub\Smallworld\TestWrapper\Carte\Carte.vcxproj" terminée (Build cible(s)).
 
 La génération a réussi.
 
-Temps écoulé 00:00:00.04
+Temps écoulé 00:00:00.03

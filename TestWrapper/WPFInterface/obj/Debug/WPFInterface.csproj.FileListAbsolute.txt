@@ -54,3 +54,25 @@ D:\temp\SW temp\TestWrapper\WPFInterface\obj\Debug\WPFInterface.csproj.GenerateR
 D:\temp\SW temp\TestWrapper\WPFInterface\obj\Debug\GeneratedInternalTypeHelper.g.cs
 D:\temp\SW temp\TestWrapper\WPFInterface\obj\Debug\WPFInterface_MarkupCompile.lref
 D:\temp\SW temp\TestWrapper\WPFInterface\obj\Debug\Themes\Generic.baml
+C:\Users\Brox\Documents\GitHub\Smallworld\TestWrapper\WPFInterface\bin\Debug\WPFInterface.exe.config
+C:\Users\Brox\Documents\GitHub\Smallworld\TestWrapper\WPFInterface\obj\Debug\WPFInterface.exe
+C:\Users\Brox\Documents\GitHub\Smallworld\TestWrapper\WPFInterface\obj\Debug\WPFInterface.pdb
+C:\Users\Brox\Documents\GitHub\Smallworld\TestWrapper\WPFInterface\bin\Debug\Carte.dll
+C:\Users\Brox\Documents\GitHub\Smallworld\TestWrapper\WPFInterface\bin\Debug\WPFInterface.exe
+C:\Users\Brox\Documents\GitHub\Smallworld\TestWrapper\WPFInterface\bin\Debug\WPFInterface.pdb
+C:\Users\Brox\Documents\GitHub\Smallworld\TestWrapper\WPFInterface\bin\Debug\mWrapper.dll
+C:\Users\Brox\Documents\GitHub\Smallworld\TestWrapper\WPFInterface\bin\Debug\mWrapper.pdb
+C:\Users\Brox\Documents\GitHub\Smallworld\TestWrapper\WPFInterface\obj\Debug\WPFInterface.csprojResolveAssemblyReference.cache
+C:\Users\Brox\Documents\GitHub\Smallworld\TestWrapper\WPFInterface\obj\Debug\MainWindow.baml
+C:\Users\Brox\Documents\GitHub\Smallworld\TestWrapper\WPFInterface\obj\Debug\GameWindow.g.cs
+C:\Users\Brox\Documents\GitHub\Smallworld\TestWrapper\WPFInterface\obj\Debug\MainWindow.g.cs
+C:\Users\Brox\Documents\GitHub\Smallworld\TestWrapper\WPFInterface\obj\Debug\App.g.cs
+C:\Users\Brox\Documents\GitHub\Smallworld\TestWrapper\WPFInterface\obj\Debug\WPFInterface_Content.g.cs
+C:\Users\Brox\Documents\GitHub\Smallworld\TestWrapper\WPFInterface\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Brox\Documents\GitHub\Smallworld\TestWrapper\WPFInterface\obj\Debug\WPFInterface_MarkupCompile.cache
+C:\Users\Brox\Documents\GitHub\Smallworld\TestWrapper\WPFInterface\obj\Debug\WPFInterface_MarkupCompile.lref
+C:\Users\Brox\Documents\GitHub\Smallworld\TestWrapper\WPFInterface\obj\Debug\GameWindow.baml
+C:\Users\Brox\Documents\GitHub\Smallworld\TestWrapper\WPFInterface\obj\Debug\Themes\Generic.baml
+C:\Users\Brox\Documents\GitHub\Smallworld\TestWrapper\WPFInterface\obj\Debug\WPFInterface.g.resources
+C:\Users\Brox\Documents\GitHub\Smallworld\TestWrapper\WPFInterface\obj\Debug\WPFInterface.Properties.Resources.resources
+C:\Users\Brox\Documents\GitHub\Smallworld\TestWrapper\WPFInterface\obj\Debug\WPFInterface.csproj.GenerateResource.Cache
