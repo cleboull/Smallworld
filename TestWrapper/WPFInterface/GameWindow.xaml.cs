@@ -23,8 +23,16 @@ namespace WPFInterface
         public GameWindow(List<int> _map)
         {
             InitializeComponent();
-            map = _map;
+            map = _map;   
             FondCarte.Map = map;
+
+        }
+
+        private void FinPartie(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
         }
     }
 }

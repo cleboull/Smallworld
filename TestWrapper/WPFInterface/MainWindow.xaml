@@ -2,12 +2,31 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="SmallWorld"
-        Height="350"
-        Width="600" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
-    
-    <Grid>
-        <Button Content="Démo" HorizontalAlignment="Left" Height="54" Margin="58,224,0,0" VerticalAlignment="Top" Width="149" Click="Create_Map" Tag="Demo"/>
-        <Button Content="Petite" HorizontalAlignment="Left" Height="54" Margin="226,224,0,0" VerticalAlignment="Top" Width="149" Click="Create_Map" Tag="Petite"/>
-        <Button Content="Normale" HorizontalAlignment="Left" Height="54" Margin="395,224,0,0" VerticalAlignment="Top" Width="149" Click="Create_Map" Tag="Normale"/>
+        Icon="./Resources/icone.ico"
+        Height="250"
+        Width="600" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <ImageBrush ImageSource="Resources/Fond ecran accueil.jpg" Stretch="UniformToFill"/>
+    </Window.Background>
+
+    <Grid Margin="-3,0,3.6,-0.2">
+        <Button Name="DemoButton" Content="Démo" HorizontalAlignment="Left" Height="40" Margin="68,159,0,0" VerticalAlignment="Top" Width="128" Click="Create_Map" Tag="Demo" IsEnabled="False"/>
+        <Button Name="PetiteButton" Content="Petite" HorizontalAlignment="Left" Height="40" Margin="248,159,0,0" VerticalAlignment="Top" Width="128" Click="Create_Map" Tag="Petite" IsEnabled="False"/>
+        <Button Name="NormaleButton" Content="Normale" HorizontalAlignment="Left" Height="40" Margin="418,159,0,0" VerticalAlignment="Top" Width="128" Click="Create_Map" Tag="Normale" IsEnabled="False"/>
+        <Label Content="Nombre de tours :" HorizontalAlignment="Left" Margin="208,93,0,0" VerticalAlignment="Top"/>
+        <Label Content="Civilisation du joueur 1 :" HorizontalAlignment="Left" Margin="178,15,0,0" VerticalAlignment="Top"/>
+        <Label Content="Civilisation du joueur 2 :" HorizontalAlignment="Left" Margin="178,55,0,0" VerticalAlignment="Top"/>
+        <ListBox HorizontalAlignment="Left" Height="20" Margin="324,18,0,0" VerticalAlignment="Top" Width="98" >
+            <ListBoxItem Content="Gaulois"/>
+            <ListBoxItem Content="Vikings"/>
+            <ListBoxItem Content="Nains"/>
+        </ListBox>
+        <ListBox HorizontalAlignment="Left" Height="20" Margin="324,58,0,0" VerticalAlignment="Top" Width="98">
+            <ListBoxItem Content="Gaulois"/>
+            <ListBoxItem Content="Vikings"/>
+            <ListBoxItem Content="Nains"/>
+        </ListBox>
+        <TextBox Name="NbTourBox" KeyUp="NbTourBox_KeyUp_1" PreviewTextInput="NbTourBox_PreviewTextInput_1" MaxLength="2" HorizontalAlignment="Left" Margin="324,93,0,0" VerticalAlignment="Top" Height="26" Width="34" Background="White"/>
+
     </Grid>
 </Window>

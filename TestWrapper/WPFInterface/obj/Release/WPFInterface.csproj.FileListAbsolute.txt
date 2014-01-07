@@ -1,0 +1,10 @@
+C:\Users\Brox\Documents\GitHub\Smallworld\TestWrapper\WPFInterface\bin\Release\WPFInterface.exe.config
+C:\Users\Brox\Documents\GitHub\Smallworld\TestWrapper\WPFInterface\obj\Release\MainWindow.baml
+C:\Users\Brox\Documents\GitHub\Smallworld\TestWrapper\WPFInterface\obj\Release\GameWindow.g.cs
+C:\Users\Brox\Documents\GitHub\Smallworld\TestWrapper\WPFInterface\obj\Release\MainWindow.g.cs
+C:\Users\Brox\Documents\GitHub\Smallworld\TestWrapper\WPFInterface\obj\Release\App.g.cs
+C:\Users\Brox\Documents\GitHub\Smallworld\TestWrapper\WPFInterface\obj\Release\WPFInterface_Content.g.cs
+C:\Users\Brox\Documents\GitHub\Smallworld\TestWrapper\WPFInterface\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Users\Brox\Documents\GitHub\Smallworld\TestWrapper\WPFInterface\obj\Release\WPFInterface_MarkupCompile.cache
+C:\Users\Brox\Documents\GitHub\Smallworld\TestWrapper\WPFInterface\obj\Release\WPFInterface_MarkupCompile.lref
+C:\Users\Brox\Documents\GitHub\Smallworld\TestWrapper\WPFInterface\obj\Release\WPFInterface.csprojResolveAssemblyReference.cache

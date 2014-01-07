@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using mWrapper;
+
 namespace WPFInterface
 {
     /// <summary>
@@ -29,6 +30,7 @@ namespace WPFInterface
 
         private void Create_Map(object sender, RoutedEventArgs e)
         {
+            
             WrapperMap wm = new WrapperMap();
             List<int> map;
             String taille = ((Button)sender).Tag.ToString();
@@ -45,5 +47,35 @@ namespace WPFInterface
             this.Close();
         }
 
+        private void NbTourBox_PreviewTextInput_1(object sender, TextCompositionEventArgs e)
+        {
+            CheckIsNumeric(e);
+        }
+
+        private void CheckIsNumeric(TextCompositionEventArgs e)
+        {
+            int resultat;
+
+            if (!(int.TryParse(e.Text, out resultat)))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void NbTourBox_KeyUp_1(object sender, KeyEventArgs e)
+        {
+            if (NbTourBox.Text != "" && !NbTourBox.Text.Contains(" "))
+            {
+                DemoButton.IsEnabled = true;
+                PetiteButton.IsEnabled = true;
+                NormaleButton.IsEnabled = true;
+            }
+            else
+            {
+                DemoButton.IsEnabled = false;
+                PetiteButton.IsEnabled = false;
+                NormaleButton.IsEnabled = false;
+            }
+        }
     }
 }
