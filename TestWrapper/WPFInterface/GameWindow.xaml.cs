@@ -45,12 +45,14 @@ namespace WPFInterface
             int sizeMap = (int)Math.Sqrt(map.Count()-1); //nombre de cases par côté
             int numSlot = ((int)y/50)*sizeMap + ((int)x/50); //numéro du slot correspondant au click
             Console.WriteLine(numSlot);
+            SelectRect.Visibility = Visibility.Visible;
             SelectRect.Margin = new Thickness(((int)x/50)*50,((int)y/50)*50, SelectRect.Margin.Right, SelectRect.Margin.Bottom);
         }
-
-        private void EndOfTurn_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-        {
             
+        private void EndTurn_Click(object sender, RoutedEventArgs e)
+        {
+            SelectRect.Visibility = Visibility.Hidden;
+            Console.WriteLine(2);
         }
     }
 }

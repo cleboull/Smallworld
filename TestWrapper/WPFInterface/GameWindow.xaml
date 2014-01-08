@@ -8,11 +8,10 @@
         <Canvas HorizontalAlignment="Left" Height="800" VerticalAlignment="Top" Width="800" Margin="0">
             <Image Source="Resources/joli (1).png" Width="800" Height="800" />
             <local:DessinerCarte  x:Name="FondCarte"  HorizontalAlignment="Left" VerticalAlignment="Top" ClipToBounds="True" Canvas.Left="25" Canvas.Top="25" Width="750" Height="750" MouseLeftButtonDown="FondCarte_MouseLeftButtonDown_1" Margin="0">
-                <Border x:Name="SelectRect" BorderBrush="LightBlue" BorderThickness="4" HorizontalAlignment="Left" Height="50" Margin="0" VerticalAlignment="Top" Width="50"/>
+                <Border x:Name="SelectRect" BorderBrush="LightBlue" BorderThickness="4" HorizontalAlignment="Left" Height="50" Margin="0" VerticalAlignment="Top" Width="50" IsEnabled="False"/>
             </local:DessinerCarte>
         </Canvas>
-        <Canvas HorizontalAlignment="Right" Height="800" Margin="817,0,0,0" VerticalAlignment="Top" Width="200">
-            <Button Content="Fin de partie" Click="FinPartie"  HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="95" Height="30" Canvas.Left="55" Canvas.Top="741"  />
+        <Canvas HorizontalAlignment="Right" Height="800" Margin="817,0,0,0" VerticalAlignment="Top" Width="200">            
             <Label Content="Joueur 1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="62" Canvas.Left="73" Canvas.Top="598"/>
             <Label Content="Tour 1/5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="62" Canvas.Left="73" Canvas.Top="624"/>
             <Grid Height="84" Canvas.Left="50" Canvas.Top="509" Width="100">
@@ -26,7 +25,8 @@
                 <Label Content="Joueur 2 :" HorizontalAlignment="Left" VerticalAlignment="Top" Width="62" Margin="0,57,0,0" Grid.ColumnSpan="2"/>
                 <Label x:Name="J2Score" Content="Label" Margin="61,57,0,0" Grid.Column="1"/>
             </Grid>
-            <Button Content="Fin du Tour" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="95" Height="30" Canvas.Left="55" Canvas.Top="686" MouseLeftButtonDown="EndOfTurn_MouseLeftButtonDown"/>
+            <Button Content="Fin du Tour" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="95" Height="30" Canvas.Left="55" Canvas.Top="686" Click="EndTurn_Click" />
+            <Button Content="Fin de partie" Click="FinPartie"  HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="95" Height="30" Canvas.Left="55" Canvas.Top="741"  />
         </Canvas>
 
     </Grid>
