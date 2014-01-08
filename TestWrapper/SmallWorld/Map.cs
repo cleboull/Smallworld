@@ -9,28 +9,10 @@ namespace SmallWorld
     {
         private SmallWorld.Slot[][] matSlot;
 
-        public Slot Slot
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
+        public MapFactory MapFactory;
 
-        public MapFactory MapFactory
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
-    
+        public Map(int nbSlot) { }
+
         public void countPoints()
         {
             throw new System.NotImplementedException();

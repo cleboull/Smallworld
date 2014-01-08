@@ -8,43 +8,24 @@ namespace SmallWorld
     public class Player : I_Player
     {
         private int points;
+        private int totalUnit;
 
-        public Player(Civilization civ)
+        public Player(string civ, int tUnit)
         {
-            throw new System.NotImplementedException();
+            //Civilization = civ;
+            totalUnit = tUnit;
         }
-    
+
         public Civilization Civilization
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get;
+            set;
         }
 
         public Unit Unit
         {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
-
-        public Unit Unit1
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
+            get;
+            set;
         }
 
         public void resetMovmentPoints()

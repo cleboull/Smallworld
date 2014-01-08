@@ -10,6 +10,7 @@ namespace SmallWorld
         private int movementPoints;
         private int powerPoints;
         private int defensePoints;
+        private int health;
 
         public void setMovPoints(int movPoints)
         {
@@ -21,7 +22,7 @@ namespace SmallWorld
             throw new System.NotImplementedException();
         }
 
-        public void reduceMovmentPoint(Slot typeslot)
+        public void reduceMovementPoints(Slot typeslot)
         {
             throw new System.NotImplementedException();
         }

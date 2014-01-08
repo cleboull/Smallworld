@@ -6,6 +6,5 @@ namespace SmallWorld
         Civilization Civilization { get; set; }
         void resetMovmentPoints();
         Unit Unit { get; set; }
-        Unit Unit1 { get; set; }
     }
 }

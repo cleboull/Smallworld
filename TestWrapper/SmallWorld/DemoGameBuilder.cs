@@ -7,9 +7,21 @@ namespace SmallWorld
 {
     public class DemoGameBuilder : MapFactory, I_DemoGameBuilder
     {
-        public void setMap()
+        public Map map;
+
+        public DemoGameBuilder() {
+            map = null;
+        }
+
+        public void setMap(List<int> intMap)
         {
-            throw new System.NotImplementedException();
+            map = new Map(5);
+            
+        }
+
+        public Map getMap()
+        {
+            return map;
         }
     }
 }

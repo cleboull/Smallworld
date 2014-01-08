@@ -9,7 +9,6 @@ namespace SmallWorld
         void endGame();
         Player getFirstPlayer();
         Map Map { get; set; }
-        Map Map1 { get; set; }
         void nextRound();
         Player Player { get; set; }
         void selectUnit();
