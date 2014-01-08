@@ -12,24 +12,20 @@ namespace SmallWorld
         private int defensePoints;
         private int health;
 
-        public void setMovPoints(int movPoints)
+        public Unit()
         {
-            throw new System.NotImplementedException();
+            movementPoints = 1;
+            powerPoints = 2;
+            defensePoints = 1;
+            health = 5;
         }
 
-        public int getMovPoints()
-        {
-            throw new System.NotImplementedException();
-        }
+        public void setMovPoints(int movPoints);
 
-        public void reduceMovementPoints(Slot typeslot)
-        {
-            throw new System.NotImplementedException();
-        }
+        public int getMovPoints();
 
-        public int getSlotPoints()
-        {
-            throw new System.NotImplementedException();
-        }
+        public void reduceMovementPoints(Slot typeSlot);
+
+        public int getSlotPoints();
     }
 }

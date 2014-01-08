@@ -7,11 +7,13 @@ namespace SmallWorld
 {
     public class Map : SmallWorld.I_Map
     {
-        private SmallWorld.Slot[][] matSlot;
+        public Slot[] matSlot;
 
         public MapFactory MapFactory;
 
-        public Map(int nbSlot) { }
+        public Map(int nbSlot) {
+            
+        }
 
         public void countPoints()
         {

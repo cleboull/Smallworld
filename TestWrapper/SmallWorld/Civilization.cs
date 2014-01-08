@@ -7,10 +7,6 @@ namespace SmallWorld
 {
     public class Civilization : I_Civilization
     {
-
-        public void createUnit()
-        {
-            throw new System.NotImplementedException();
-        }
+        public Unit createUnit();
     }
 }

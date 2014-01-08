@@ -7,13 +7,9 @@ namespace SmallWorld
 {
     public class DwarfFactory : Civilization, I_DwarfFactory
     {
-        public void createUnit()
+        public Unit createUnit()
         {
-            throw new System.NotImplementedException();
+            return new DwarfUnit();
         }
-    }
-
-    public class CopyOfDwarfFactory : I_DwarfFactory
-    {
     }
 }

@@ -11,28 +11,22 @@
   </Comment>
   <Class Name="SmallWorld.Player">
     <Position X="11" Y="0.5" Width="1.5" />
-    <AssociationLine Name="Civilization" Type="SmallWorld.Civilization" FixedFromPoint="true" FixedToPoint="true">
+    <AssociationLine Name="playerCiv" Type="SmallWorld.Civilization" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="11" Y="1.296" />
-        <Point X="8.562" Y="1.296" />
+        <Point X="11" Y="1.375" />
+        <Point X="8.562" Y="1.375" />
         <Point X="8.562" Y="2.5" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
         <Position X="0.143" Y="0.31" />
       </MemberNameLabel>
     </AssociationLine>
-    <AssociationLine Name="Unit" Type="SmallWorld.Unit">
-      <MemberNameLabel ManuallyPlaced="true">
-        <Position X="0.118" Y="0.31" />
-      </MemberNameLabel>
-    </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAAACAAAAAAABAIAAAAAAAAACAAAAAAACAAAAAAAA=</HashCode>
+      <HashCode>AAAAAACAAAAAAAABAABAAAAAAACAAAAAAACAAAAAAAA=</HashCode>
       <FileName>Player.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="Civilization" />
-      <Property Name="Unit" />
+      <Field Name="playerCiv" />
     </ShowAsAssociation>
     <Lollipop Position="0.2" />
   </Class>
@@ -123,7 +117,7 @@
   <Class Name="SmallWorld.MapFactory">
     <Position X="18.5" Y="4.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAIAAAAAACBAAAAAAAAAAAAEAAAAAAAgAAAAAAAAA=</HashCode>
+      <HashCode>AAAAgAAAAAAAAAAAAgQAAAAAAAACAABAAAAAAAQAACA=</HashCode>
       <FileName>MapFactory.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />

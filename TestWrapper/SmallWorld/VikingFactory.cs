@@ -7,9 +7,9 @@ namespace SmallWorld
 {
     public class VikingFactory : Civilization, I_VikingFactory
     {
-        public void createUnit()
+        public Unit createUnit()
         {
-            throw new System.NotImplementedException();
+            return new VikingUnit();
         }
     }
 }

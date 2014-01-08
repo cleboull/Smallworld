@@ -7,9 +7,9 @@ namespace SmallWorld
 {
     public class GallicFactory : Civilization, I_GallicFactory
     {
-        public void createUnit()
+        public Unit createUnit()
         {
-            throw new System.NotImplementedException();
+            return new GallicUnit();
         }
     }
 }
