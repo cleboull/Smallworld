@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SmallWorld
 {
-    public class VikingFactory : Civilization, I_VikingFactory, SmallWorld.I_VikingFactory
+    public class VikingFactory : Civilization, I_VikingFactory
     {
         public void createUnit()
         {

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SmallWorld
 {
-    public class GallicUnit : Unit, I_GallicUnit, SmallWorld.I_GallicUnit
+    public class GallicUnit : Unit, I_GallicUnit
     {
         public void reduceMovementPoints(Slot typeSlot)
         {

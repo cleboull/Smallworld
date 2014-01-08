@@ -1,7 +1,7 @@
 ﻿using System;
 namespace SmallWorld
 {
-    interface I_Slot
+    public interface I_Slot
     {
         void addUnit();
         int countPointsSlot(Civilization civ);

@@ -9,5 +9,10 @@
         <local:DessinerCarte x:Name="FondCarte"  HorizontalAlignment="Left" VerticalAlignment="Top" ClipToBounds="True" Width="750" Height="750"/>
         <Button Content="Fin du Tour" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="769,640,29.6,157.2" Width="95" Height="30"/>
         <Button Content="Fin de partie" Click="FinPartie"  HorizontalAlignment="Center" VerticalAlignment="Center" Margin="769,697,29.6,100.2" Width="95" Height="30"  />
+        <Label Content="Tour 1/5 - Tour du joueur ?" HorizontalAlignment="Left" Margin="10,755,0,0" VerticalAlignment="Top" Width="317"/>
+        <Label Content="Points du joueur 1 :" HorizontalAlignment="Left" Margin="10,781,0,0" VerticalAlignment="Top" Width="114"/>
+        <TextBox Name="TextBoxJ1" HorizontalAlignment="Left" Height="26" Margin="124,781,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="26"/>
+        <Label Content="Points du joueur 2 :" HorizontalAlignment="Left" Margin="187,781,0,0" VerticalAlignment="Top" Width="114"/>
+        <TextBox Name="TextBoxJ2" HorizontalAlignment="Left" Height="26" Margin="301,780,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="26"/>
     </Grid>
 </Window>

@@ -5,10 +5,10 @@ using System.Text;
 
 namespace SmallWorld
 {
-    public class GameCreator : I_GameCreator, SmallWorld.I_GameCreator
+    public class GameCreator : I_GameCreator
     {
-        private @enum mapSize;
-        private @enum civP1;
+        private int mapSize;
+        private int civP1;
         private int civP2;
         private int roundNumberMax;
         private int firstPlayer;

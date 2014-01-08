@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SmallWorld
 {
-    public class GallicFactory : Civilization, I_GallicFactory, SmallWorld.I_GallicFactory
+    public class GallicFactory : Civilization, I_GallicFactory
     {
         public void createUnit()
         {

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SmallWorld
 {
-    public class DwarfUnit : Unit, I_DwarfUnit, SmallWorld.I_DwarfUnit
+    public class DwarfUnit : Unit, I_DwarfUnit
     {
         public void reduceMovementPoints(Slot typeSlot)
         {

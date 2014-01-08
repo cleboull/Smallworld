@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SmallWorld
 {
-    public class Game : I_Game, SmallWorld.I_Game
+    public class Game : I_Game
     {
         private bool unitSelected;
         private int nbUnitOnSlot;

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SmallWorld
 {
-    public class Player : I_Player, SmallWorld.I_Player
+    public class Player : I_Player
     {
         private int points;
 

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SmallWorld
 {
-    public class Slot : I_Slot, SmallWorld.I_Slot
+    public class Slot : I_Slot
     {
         private List<Unit> listUnit;
 
