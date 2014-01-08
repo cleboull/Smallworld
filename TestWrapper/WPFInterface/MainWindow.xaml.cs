@@ -42,8 +42,8 @@ namespace WPFInterface
                 default: map = null; break;
             }
             GameWindow gameWindow = new GameWindow(map);
+            
             gameWindow.Show();
-
             this.Close();
         }
     }

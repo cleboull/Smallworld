@@ -51,21 +51,37 @@ namespace WPFInterface
         //    DefaultStyleKeyProperty.OverrideMetadata(typeof(DessinerCarte), new FrameworkPropertyMetadata(typeof(DessinerCarte)));
         //}
         Brush[] brushes = { Brushes.Blue, Brushes.Red, Brushes.Green, Brushes.Black, Brushes.Pink };
+        ImageSource[] images = {
+                    new BitmapImage(new Uri(@"..\..\Resources\desert.png",UriKind.Relative)),
+                    new BitmapImage(new Uri(@"..\..\Resources\foret.png",UriKind.Relative)),
+                    new BitmapImage(new Uri(@"..\..\Resources\montagne.png",UriKind.Relative)),
+                    new BitmapImage(new Uri(@"..\..\Resources\plaine.png",UriKind.Relative)),
+                    new BitmapImage(new Uri(@"..\..\Resources\sea.png",UriKind.Relative))
+                    };
+
         protected override void OnRender(DrawingContext drawingContext)
         {
             if (Map != null)
             {
                 int sizeMap = Map.Count();
-                int size = (int)Math.Sqrt(sizeMap);
+                int size = (int)Math.Sqrt(sizeMap-1);
                 for (int x = 0; x < size; x++)
                 {
                     for (int y = 0; y < size; y++)
-                        drawingContext.DrawRectangle(brushes[Map[x + size * y]], null, new Rect(x * 50, y * 50, 50, 50));
+                        drawingContext.DrawImage(images[Map[x + size * y]], new Rect(x * 50, y * 50, 50, 50));
                 }
-            }
+                int margin;
+                switch (size)
+                {
+                    case 5: margin = 250; break;
+                    case 10: margin = 125; break;
+                    default: margin = 0; break;                       
+                }
+                this.Margin = new Thickness(margin,margin, this.Margin.Right, this.Margin.Bottom);
+            }           
             base.OnRender(drawingContext);
         }
-
+        
         public List<int> Map { get; set; }
     }
 }
