@@ -10,23 +10,21 @@
     </Window.Background>
 
     <Grid Margin="-3,0,3.6,-0.2">
-        <Button Name="DemoButton" Content="Démo" HorizontalAlignment="Left" Height="40" Margin="68,159,0,0" VerticalAlignment="Top" Width="128" Click="Create_Map" Tag="Demo" IsEnabled="False"/>
-        <Button Name="PetiteButton" Content="Petite" HorizontalAlignment="Left" Height="40" Margin="248,159,0,0" VerticalAlignment="Top" Width="128" Click="Create_Map" Tag="Petite" IsEnabled="False"/>
-        <Button Name="NormaleButton" Content="Normale" HorizontalAlignment="Left" Height="40" Margin="418,159,0,0" VerticalAlignment="Top" Width="128" Click="Create_Map" Tag="Normale" IsEnabled="False"/>
-        <Label Content="Nombre de tours :" HorizontalAlignment="Left" Margin="208,93,0,0" VerticalAlignment="Top"/>
-        <Label Content="Civilisation du joueur 1 :" HorizontalAlignment="Left" Margin="178,15,0,0" VerticalAlignment="Top"/>
-        <Label Content="Civilisation du joueur 2 :" HorizontalAlignment="Left" Margin="178,55,0,0" VerticalAlignment="Top"/>
-        <ListBox HorizontalAlignment="Left" Height="20" Margin="324,18,0,0" VerticalAlignment="Top" Width="98" >
-            <ListBoxItem Content="Gaulois"/>
-            <ListBoxItem Content="Vikings"/>
-            <ListBoxItem Content="Nains"/>
-        </ListBox>
-        <ListBox HorizontalAlignment="Left" Height="20" Margin="324,58,0,0" VerticalAlignment="Top" Width="98">
-            <ListBoxItem Content="Gaulois"/>
-            <ListBoxItem Content="Vikings"/>
-            <ListBoxItem Content="Nains"/>
-        </ListBox>
-        <TextBox Name="NbTourBox" KeyUp="NbTourBox_KeyUp_1" PreviewTextInput="NbTourBox_PreviewTextInput_1" MaxLength="2" HorizontalAlignment="Left" Margin="324,93,0,0" VerticalAlignment="Top" Height="26" Width="34" Background="White"/>
+        <Button Name="DemoButton" Content="Démo" HorizontalAlignment="Left" Height="40" Margin="68,159,0,0" VerticalAlignment="Top" Width="128" Click="Create_Map" Tag="Demo"/>
+        <Button Name="PetiteButton" Content="Petite" HorizontalAlignment="Left" Height="40" Margin="248,159,0,0" VerticalAlignment="Top" Width="128" Click="Create_Map" Tag="Petite"/>
+        <Button Name="NormaleButton" Content="Normale" HorizontalAlignment="Left" Height="40" Margin="418,159,0,0" VerticalAlignment="Top" Width="128" Click="Create_Map" Tag="Normale"/>
+        <Label Content="Civilisation du joueur 1 :" HorizontalAlignment="Left" Margin="177,37,0,0" VerticalAlignment="Top"/>
+        <Label Content="Civilisation du joueur 2 :" HorizontalAlignment="Left" Margin="177,77,0,0" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Height="20" Margin="323,40,0,0" VerticalAlignment="Top" Width="98" >
+            <ComboBoxItem Content="Gaulois" IsSelected="True"/>
+            <ComboBoxItem Content="Vikings"/>
+            <ComboBoxItem Content="Nains"/>
+        </ComboBox>
+        <ComboBox HorizontalAlignment="Left" Height="20" Margin="323,80,0,0" VerticalAlignment="Top" Width="98">
+            <ComboBoxItem Content="Gaulois" IsSelected="True"/>
+            <ComboBoxItem Content="Vikings"/>
+            <ComboBoxItem Content="Nains"/>
+        </ComboBox>
 
     </Grid>
 </Window>

@@ -20,7 +20,7 @@ namespace WPFInterface
     /// Logique d'interaction pour MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
-    {        
+    {
 
         public MainWindow()
         {
@@ -30,7 +30,7 @@ namespace WPFInterface
 
         private void Create_Map(object sender, RoutedEventArgs e)
         {
-            
+
             WrapperMap wm = new WrapperMap();
             List<int> map;
             String taille = ((Button)sender).Tag.ToString();
@@ -43,39 +43,8 @@ namespace WPFInterface
             }
             GameWindow gameWindow = new GameWindow(map);
             gameWindow.Show();
-            
+
             this.Close();
-        }
-
-        private void NbTourBox_PreviewTextInput_1(object sender, TextCompositionEventArgs e)
-        {
-            CheckIsNumeric(e);
-        }
-
-        private void CheckIsNumeric(TextCompositionEventArgs e)
-        {
-            int resultat;
-
-            if (!(int.TryParse(e.Text, out resultat)))
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void NbTourBox_KeyUp_1(object sender, KeyEventArgs e)
-        {
-            if (NbTourBox.Text != "" && !NbTourBox.Text.Contains(" "))
-            {
-                DemoButton.IsEnabled = true;
-                PetiteButton.IsEnabled = true;
-                NormaleButton.IsEnabled = true;
-            }
-            else
-            {
-                DemoButton.IsEnabled = false;
-                PetiteButton.IsEnabled = false;
-                NormaleButton.IsEnabled = false;
-            }
         }
     }
 }
