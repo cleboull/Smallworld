@@ -26,7 +26,7 @@ namespace WPFInterface
             InitializeComponent();
             map = _map;
             FondCarte.Map = map;
-            
+
         }
 
         private void FinPartie(object sender, RoutedEventArgs e)
@@ -42,13 +42,22 @@ namespace WPFInterface
             var pos = e.GetPosition(grid);
             var x = pos.X; //coordonnée x du click
             var y = pos.Y; //coordonnée y du click
-            int sizeMap = (int)Math.Sqrt(map.Count()-1); //nombre de cases par côté
-            int numSlot = ((int)y/50)*sizeMap + ((int)x/50); //numéro du slot correspondant au click
+            int sizeMap = (int)Math.Sqrt(map.Count() - 1); //nombre de cases par côté
+            int numSlot = ((int)y / 50) * sizeMap + ((int)x / 50); //numéro du slot correspondant au click
             Console.WriteLine(numSlot);
-            SelectRect.Visibility = Visibility.Visible;
-            SelectRect.Margin = new Thickness(((int)x/50)*50,((int)y/50)*50, SelectRect.Margin.Right, SelectRect.Margin.Bottom);
+            int newSelectRectX = ((int)x / 50) * 50;
+            int newSelectRectY = ((int)y / 50) * 50;
+            if ((newSelectRectX == SelectRect.Margin.Left && newSelectRectY == SelectRect.Margin.Top) && SelectRect.Visibility == Visibility.Visible)
+            {
+                SelectRect.Visibility = Visibility.Hidden; //déselection
+            }
+            else if (SelectRect.Visibility == Visibility.Hidden)
+            {
+                SelectRect.Visibility = Visibility.Visible;
+                SelectRect.Margin = new Thickness(((int)x / 50) * 50, ((int)y / 50) * 50, SelectRect.Margin.Right, SelectRect.Margin.Bottom);
+            }
         }
-            
+
         private void EndTurn_Click(object sender, RoutedEventArgs e)
         {
             SelectRect.Visibility = Visibility.Hidden;
