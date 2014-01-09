@@ -24,6 +24,7 @@ namespace WPFInterface
         public GameWindow(List<int> _map)
         {
             InitializeComponent();
+            //map = .getMap()
             map = _map;
             FondCarte.Map = map;
             
