@@ -90,6 +90,12 @@
     <None Include="implementation.cd" />
     <None Include="interface.cd" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\mWrapper\mWrapper.vcxproj">
+      <Project>{54025496-17fa-43f1-b37f-af5ea4792b5f}</Project>
+      <Name>mWrapper</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

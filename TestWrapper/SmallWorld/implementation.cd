@@ -70,7 +70,7 @@
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>wAwAEAAAAAAAIAAAAABQIBQAAYAABACAAgABAIAAAtA=</HashCode>
+      <HashCode>wAwAEAAAAAAAIAAAAABQIBQAAYAABACAAgAhAIAAAtA=</HashCode>
       <FileName>Game.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -80,9 +80,9 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="SmallWorld.GameCreator">
-    <Position X="14.75" Y="6.25" Width="1.5" />
+    <Position X="14.5" Y="7.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAgCEAAgAIAAAQAAAAAAAAAAAAACAEAIACCBAwAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
       <FileName>GameCreator.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -210,7 +210,7 @@
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAQAAAAAAAAAIAAAAIAAAAAAAIAkAAAAAAgAAIAAABA=</HashCode>
+      <HashCode>AAQAAAAAAAAAIIAAAIAAAAAAAIAEAAAAAAgAAIAAABA=</HashCode>
       <FileName>Map.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>

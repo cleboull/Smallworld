@@ -17,6 +17,9 @@ namespace SmallWorld
         private int currentRoundNumber;
         private int roundNumberMax;
         private int firstPlayer;
+        private List<Unit>[] placementUnitP1;
+        private List<Unit>[] placementUnitP2;
+
         public Player player1;
         public Player player2;
         public Map map;
@@ -35,6 +38,19 @@ namespace SmallWorld
             possibleFight = false;
             possibleMovment = false;
             map = mapConst;
+
+            positionUnits();
+        }
+
+        public void positionUnits()
+        {
+
+
+            //appel wrapper (avec param map ?) retourne deux int (position)
+            //p1.initPosUnites(pos1)
+            //..
+            //avec initposunites :
+            // 
         }
 
         public void selectSlot(Slot slot)

@@ -8,16 +8,12 @@ namespace SmallWorld
 {
     public class Map : SmallWorld.I_Map
     {
-        private Hashtable unitOnSlotP1;
-        private Hashtable unitOnSlotP2;
+        public Slot[] matSlot;
 
         public MapFactory MapFactory;
 
         public Map(int nbSlot)
         {
-            unitOnSlotP1 = new Hashtable();
-            unitOnSlotP2 = new Hashtable();
-            unitOnSlot[0] = //TODO
         }
 
         public void countPoints()

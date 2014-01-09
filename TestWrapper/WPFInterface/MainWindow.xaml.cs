@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using mWrapper;
+using SmallWorld;
 
 namespace WPFInterface
 {
@@ -30,17 +31,13 @@ namespace WPFInterface
 
         private void Create_Map(object sender, RoutedEventArgs e)
         {
-
-            WrapperMap wm = new WrapperMap();
-            List<int> map;
+            String civ1 = ;
+            String civ2;
             String taille = ((Button)sender).Tag.ToString();
-            switch (taille)
-            {
-                case "Demo": map = wm.CreateMapWrapper(5); break;
-                case "Petite": map = wm.CreateMapWrapper(10); break;
-                case "Normale": map = wm.CreateMapWrapper(15); break;
-                default: map = null; break;
-            }
+            List<int> map;
+
+            GameCreator gc = new GameCreator(civ1, civ2, taille);
+
             GameWindow gameWindow = new GameWindow(map);
             
             gameWindow.Show();
