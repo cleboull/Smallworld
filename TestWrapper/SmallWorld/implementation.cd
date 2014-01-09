@@ -13,8 +13,8 @@
     <Position X="11" Y="0.5" Width="1.5" />
     <AssociationLine Name="playerCiv" Type="SmallWorld.Civilization" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="11" Y="1.375" />
-        <Point X="8.562" Y="1.375" />
+        <Point X="11" Y="1.454" />
+        <Point X="8.562" Y="1.454" />
         <Point X="8.562" Y="2.5" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
@@ -22,7 +22,7 @@
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAAACAAAAAAAABAABAAAAAAACAAAAAAACAAAAAAAA=</HashCode>
+      <HashCode>AAAAAACAAAAAAAABAABAAAAAAACAAAAAAACAAAAAACA=</HashCode>
       <FileName>Player.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -70,12 +70,12 @@
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>wAQCAAAAABAAIAAAAABQIBQAAYAABACAABAAAAAAAhA=</HashCode>
+      <HashCode>wAwAEAAAAAAAIAAAAABQIBQAAYAABACAAgABAIAAAtA=</HashCode>
       <FileName>Game.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Field Name="player1" />
-      <Field Name="Map" />
+      <Field Name="map" />
     </ShowAsAssociation>
     <Lollipop Position="0.2" />
   </Class>
@@ -125,7 +125,7 @@
   <Class Name="SmallWorld.DemoGameBuilder">
     <Position X="16.75" Y="7.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAEAAQAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAEAAQAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAIAAA=</HashCode>
       <FileName>DemoGameBuilder.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -133,7 +133,7 @@
   <Class Name="SmallWorld.SmallGameBuilder">
     <Position X="18.5" Y="7.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAEAAQAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAEAAQAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAIAAA=</HashCode>
       <FileName>SmallGameBuilder.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -141,7 +141,7 @@
   <Class Name="SmallWorld.StandardGameBuilder">
     <Position X="20.25" Y="7.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAEAAQAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAEAAQAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAIAAA=</HashCode>
       <FileName>StandardGameBuilder.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -149,7 +149,7 @@
   <Class Name="SmallWorld.Slot">
     <Position X="25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAgCAQAAAAAAAAAQAAAAAAIAAACEAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Slot.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -210,7 +210,7 @@
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAQAAAAAAAAAIIAAAIAAAAAAAIAEAAAAAAgAAIAAABA=</HashCode>
+      <HashCode>AAQAAAAAAAAAIAAAAIAAAAAAAIAkAAAAAAgAAIAAABA=</HashCode>
       <FileName>Map.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>

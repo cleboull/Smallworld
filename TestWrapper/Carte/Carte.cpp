@@ -11,6 +11,13 @@ Carte::Carte(int size):taille(size){
 Carte::~Carte(void){
 }
 
+/*Génére une liste d'entier représentant le type de la case
+1 -> Desert
+2 -> Foret
+3 -> Montagne
+4 -> Plaine
+5 -> Mer
+*/
 void Carte::generer(){
 	int i;
 	map = new int [taille*taille];

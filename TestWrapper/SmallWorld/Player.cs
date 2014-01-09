@@ -36,6 +36,10 @@ namespace SmallWorld
             }
         }
 
+        public int getPoints()
+        {
+            return points;
+        }
 
         public void resetMovmentPoints()
         {

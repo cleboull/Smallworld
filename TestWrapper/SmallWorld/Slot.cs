@@ -7,9 +7,7 @@ namespace SmallWorld
 {
     public class Slot : I_Slot
     {
-        private List<Unit> listUnit;
-
-        public Unit strongestUnit()
+   /*     public Unit strongestUnit()
         {
             throw new System.NotImplementedException();
         }
@@ -37,6 +35,6 @@ namespace SmallWorld
         public void addUnit()
         {
             throw new System.NotImplementedException();
-        }
+        }*/
     }
 }

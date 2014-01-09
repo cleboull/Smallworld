@@ -7,69 +7,93 @@ namespace SmallWorld
 {
     public class Game : I_Game
     {
-        private bool unitSelected;
+        private Unit unitSelected;
+        private bool isUnitSelected;
         private int nbUnitOnSlot;
         private bool slotTaken;
         private bool possibleMovment;
         private bool possibleFight;
         private int currentPlayer;
         private int currentRoundNumber;
+        private int roundNumberMax;
+        private int firstPlayer;
         public Player player1;
         public Player player2;
-        public Map Map;
+        public Map map;
 
-        public Game(string civP1Name, string civP2Name, int totalUnit, int firstPlayer, Map map, int roundNumberMax)
+        public Game(string civP1Name, string civP2Name, int totalUnit, int firstP, Map mapConst, int roundMax)
         {
             player1 = new Player(civP1Name, totalUnit);
             player2 = new Player(civP2Name, totalUnit);
-            currentPlayer = firstPlayer;
+            firstPlayer = firstP;
+            currentPlayer = firstP;
             currentRoundNumber = 1;
-            unitSelected = false;
+            roundNumberMax = roundMax;
+            unitSelected = null;
+            isUnitSelected = false;
             nbUnitOnSlot = 0;
             possibleFight = false;
             possibleMovment = false;
+            map = mapConst;
         }
 
-        public void selectUnit()
+        public void selectSlot(Slot slot)
         {
-            throw new System.NotImplementedException();
-            unitSelected = true;
+            map.selectSlot(slot);
+        }
+
+        public void selectUnit(Unit unit)
+        {
+            map.
+            isUnitSelected = true;
+            unitSelected = unit;
         }
 
         public void deselectUnit()
         {
-            unitSelected = false;
-            throw new System.NotImplementedException();
+            unitSelected = null;
+            isUnitSelected = false;
         }
 
         public void changePlayer()
         {
-            throw new System.NotImplementedException();
+            currentPlayer = (currentPlayer % 2) + 1;
+        }
+
+        public void countPoints()
+        {
+
         }
 
         public void nextRound()
         {
-            throw new System.NotImplementedException();
+            changePlayer();
+            currentRoundNumber++;
+            if (currentRoundNumber == roundNumberMax)
+                gameOver();
         }
 
         public void setCurrentPlayer(int player)
         {
-            throw new System.NotImplementedException();
-        }
-
-        public void createGame()
-        {
-            throw new System.NotImplementedException();
+           currentPlayer = player;
         }
 
         public Player getFirstPlayer()
         {
-            throw new System.NotImplementedException();
+            if (firstPlayer == 1)
+                return player1;
+            else
+                return player2;
         }
 
-        public void endGame()
+        public string gameOver()
         {
-            throw new System.NotImplementedException();
+            if(player1.getPoints() > player2.getPoints())
+                return "player1";
+            else if(player1.getPoints() < player2.getPoints())
+                return "player2";
+            else
+                return "draw";
         }
     }
 }
