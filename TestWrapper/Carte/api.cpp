@@ -1,5 +1,6 @@
 #include "api.h"
 #include <math.h>
+
  int* genererMap(int taille){
 	Carte c(taille);
 	c.generer();
