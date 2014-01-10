@@ -1,12 +1,12 @@
 #include "api.h"
 #include <math.h>
-DLL int* genererMap(int taille){
+ int* genererMap(int taille){
 	Carte c(taille);
 	c.generer();
 	return c.getData();
 }
 
-DLL int* getPositionInit(int* map,int tailleMap){
+ int* getPositionInit(int* map,int tailleMap){
 	int tailleCote = (int)sqrt((double)tailleMap);
 	int posJ1;
 	int posJ2;
