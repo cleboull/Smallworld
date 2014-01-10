@@ -7,7 +7,7 @@ namespace SmallWorld
 {
     public class VikingFactory : Civilization, I_VikingFactory
     {
-        public Unit createUnit()
+        public override Unit createUnit()
         {
             return new VikingUnit();
         }

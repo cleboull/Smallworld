@@ -8,9 +8,9 @@ namespace SmallWorld
     public class Player : I_Player
     {
         private int points;
-        public Civilization playerCiv;
+        private Civilization playerCiv;
         private int totalUnit;
-        public List<Unit> unitList;
+        private List<Unit> unitList;
 
         public Player(string civ, int tUnit)
         {
@@ -34,6 +34,11 @@ namespace SmallWorld
             {
                 unitList.Add(playerCiv.createUnit());
             }
+        }
+
+        public List<Unit> getUnitList()
+        {
+            return unitList;
         }
 
         public int getPoints()

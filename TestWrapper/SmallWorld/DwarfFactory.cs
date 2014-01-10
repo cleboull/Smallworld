@@ -7,7 +7,7 @@ namespace SmallWorld
 {
     public class DwarfFactory : Civilization, I_DwarfFactory
     {
-        public Unit createUnit()
+        public override Unit createUnit()
         {
             return new DwarfUnit();
         }

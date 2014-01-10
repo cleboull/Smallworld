@@ -7,6 +7,5 @@ namespace SmallWorld
 {
     public interface I_DemoGameBuilder : I_MapFactory
     {
-        void setMap();
     }
 }

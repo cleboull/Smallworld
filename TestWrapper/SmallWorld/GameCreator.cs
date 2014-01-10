@@ -49,7 +49,12 @@ namespace SmallWorld
             }
             Random rnd = new Random();
             int firstPlayer= rnd.Next(2);
-            game = new Game(civ1, civ2, totalUnit, firstPlayer, map, roundNumberMax);
+            game = new Game(civ1, civ2, totalUnit, firstPlayer, map, intMap, roundNumberMax);
+        }
+
+        public Game getGame()
+        {
+            return game;
         }
     }
 }

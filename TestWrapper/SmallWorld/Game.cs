@@ -2,29 +2,31 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using mWrapper;
 
 namespace SmallWorld
 {
     public class Game : I_Game
     {
-        private Unit unitSelected;
-        private bool isUnitSelected;
-        private int nbUnitOnSlot;
-        private bool slotTaken;
-        private bool possibleMovment;
-        private bool possibleFight;
-        private int currentPlayer;
-        private int currentRoundNumber;
-        private int roundNumberMax;
-        private int firstPlayer;
-        private List<Unit>[] placementUnitP1;
-        private List<Unit>[] placementUnitP2;
+        Unit unitSelected;
+        bool isUnitSelected;
+        int nbUnitOnSlot;
+        bool slotTaken;
+        bool possibleMovment;
+        bool possibleFight;
+        int currentPlayer;
+        int currentRoundNumber;
+        int roundNumberMax;
+        int firstPlayer;
+        List<Unit>[] placementUnitP1;
+        List<Unit>[] placementUnitP2;
+        List<int> intMap;
 
-        public Player player1;
-        public Player player2;
-        public Map map;
+        Player player1;
+        Player player2;
+        Map map;
 
-        public Game(string civP1Name, string civP2Name, int totalUnit, int firstP, Map mapConst, int roundMax)
+        public Game(string civP1Name, string civP2Name, int totalUnit, int firstP, Map mapConst, List<int> iMap, int roundMax)
         {
             player1 = new Player(civP1Name, totalUnit);
             player2 = new Player(civP2Name, totalUnit);
@@ -37,6 +39,7 @@ namespace SmallWorld
             nbUnitOnSlot = 0;
             possibleFight = false;
             possibleMovment = false;
+            intMap = iMap;
             map = mapConst;
 
             positionUnits();
@@ -44,23 +47,25 @@ namespace SmallWorld
 
         public void positionUnits()
         {
+            WrapperMap wm = new WrapperMap();
+            //int[] positionUnit = wm.GetPositionUnit(intMap);
 
+            placementUnitP1[/*positionUnit[0]*/0] = player1.getUnitList();
+            placementUnitP2[/*positionUnit[1]*/1] = player2.getUnitList();
+        }
 
-            //appel wrapper (avec param map ?) retourne deux int (position)
-            //p1.initPosUnites(pos1)
-            //..
-            //avec initposunites :
-            // 
+        public List<int> getMap()
+        {
+            return intMap;
         }
 
         public void selectSlot(Slot slot)
         {
-            map.selectSlot(slot);
+            
         }
 
         public void selectUnit(Unit unit)
         {
-            map.
             isUnitSelected = true;
             unitSelected = unit;
         }

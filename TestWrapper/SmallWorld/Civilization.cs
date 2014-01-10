@@ -5,8 +5,8 @@ using System.Text;
 
 namespace SmallWorld
 {
-    public class Civilization : I_Civilization
+    public abstract class Civilization : I_Civilization
     {
-        public Unit createUnit();
+        public abstract Unit createUnit();
     }
 }

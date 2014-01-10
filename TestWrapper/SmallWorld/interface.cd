@@ -38,119 +38,119 @@
   <Interface Name="SmallWorld.I_MapFactory">
     <Position X="11.75" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAIAAAAAACBAAAAAAAAAAAAEAAAAAAAgAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>I_MapFactory.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="SmallWorld.I_DemoGameBuilder">
     <Position X="10" Y="6.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>I_DemoGameBuilder.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="SmallWorld.I_SmallGameBuilder">
     <Position X="11.75" Y="6.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>I_SmallGameBuilder.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="SmallWorld.I_StandardGameBuilder">
     <Position X="13.5" Y="6.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>I_StandardGameBuilder.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="SmallWorld.I_Slot">
     <Position X="18.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAgCAQAAAAAAAAAQAAAAAAIAAAAEAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>I_Slot.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="SmallWorld.I_Map">
     <Position X="11.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAAAAAAIAAAAIAAAAAAAIAEAAAAAAgAAIAAAhA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>I_Map.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="SmallWorld.I_Game" Collapsed="true">
+  <Interface Name="SmallWorld.I_Game">
     <Position X="7.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACAAAgABAAIAAAAABAIBQAAQAAAAAAABAAAQAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>I_Game.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="SmallWorld.I_GameCreator">
     <Position X="7.5" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAhAAEAAAAAAAAAAQAAAAgAAAAAAAAAgAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>I_GameCreator.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="SmallWorld.I_Player">
     <Position X="4.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAABAIAAAAAAAAACAAAAAQAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>I_Player.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="SmallWorld.I_VikingFactory">
     <Position X="0.5" Y="6" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>I_VikingFactory.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="SmallWorld.I_VikingUnit">
     <Position X="3.75" Y="9.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>I_VikingUnit.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="SmallWorld.I_GallicFactory">
     <Position X="2.25" Y="6" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>I_GallicFactory.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="SmallWorld.I_Civilization">
     <Position X="2.25" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>I_Civilization.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="SmallWorld.I_GallicUnit">
     <Position X="5.5" Y="9.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>I_GallicUnit.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="SmallWorld.I_DwarfUnit">
     <Position X="7.25" Y="9.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>I_DwarfUnit.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="SmallWorld.I_Unit">
     <Position X="5.5" Y="7.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAIAAAAAAAAAAAAgAAAAAAAAAAAAAAAAEAAAAgAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>I_Unit.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="SmallWorld.I_DwarfFactory">
     <Position X="4" Y="6" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>I_DwarfFactory.cs</FileName>
     </TypeIdentifier>
   </Interface>

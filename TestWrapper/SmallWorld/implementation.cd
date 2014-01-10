@@ -13,8 +13,8 @@
     <Position X="11" Y="0.5" Width="1.5" />
     <AssociationLine Name="playerCiv" Type="SmallWorld.Civilization" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="11" Y="1.454" />
-        <Point X="8.562" Y="1.454" />
+        <Point X="11" Y="1.533" />
+        <Point X="8.562" Y="1.533" />
         <Point X="8.562" Y="2.5" />
       </Path>
       <MemberNameLabel ManuallyPlaced="true">
@@ -22,7 +22,7 @@
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAAACAAAAAAAABAABAAAAAAACAAAAAAACAAAAAACA=</HashCode>
+      <HashCode>AAAAAACAAAAAAAABAABAQAAAAACAAAAAAACAAAAAACA=</HashCode>
       <FileName>Player.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -70,7 +70,7 @@
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>wAwAEAAAAAAAIAAAAABQIBQAAYAABACAAgAhAIAAAtA=</HashCode>
+      <HashCode>wAwAEAAQAAAAIAAAAABQIBQAAYAABACAAiAhAIAAAtA=</HashCode>
       <FileName>Game.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -82,7 +82,7 @@
   <Class Name="SmallWorld.GameCreator">
     <Position X="14.5" Y="7.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAg=</HashCode>
       <FileName>GameCreator.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -93,7 +93,7 @@
   <Class Name="SmallWorld.DwarfUnit">
     <Position X="9.25" Y="10.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>DwarfUnit.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -101,7 +101,7 @@
   <Class Name="SmallWorld.VikingUnit">
     <Position X="11" Y="10.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>VikingUnit.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -109,7 +109,7 @@
   <Class Name="SmallWorld.GallicUnit">
     <Position X="12.75" Y="10.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>GallicUnit.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -197,7 +197,7 @@
   <Class Name="SmallWorld.Unit">
     <Position X="10.75" Y="7" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAAAAIAAIAAAAAAAAAgAAAAAQAAAAAAAAAAAACAAgAg=</HashCode>
+      <HashCode>AAAAAAAAIAAAAAAAAAgAAAAAAAAAAAAAAAAAACAAAAg=</HashCode>
       <FileName>Unit.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -210,7 +210,7 @@
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAQAAAAAAAAAIIAAAIAAAAAAAIAEAAAAAAgAAIAAABA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
       <FileName>Map.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>

@@ -7,7 +7,7 @@ namespace SmallWorld
 {
     public class GallicFactory : Civilization, I_GallicFactory
     {
-        public Unit createUnit()
+        public override Unit createUnit()
         {
             return new GallicUnit();
         }

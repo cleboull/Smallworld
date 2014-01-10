@@ -7,14 +7,5 @@ namespace SmallWorld
 {
     public class GallicUnit : Unit, I_GallicUnit
     {
-        public void reduceMovementPoints(Slot typeSlot)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public int getWinPoints(Slot typeSlot)
-        {
-            throw new System.NotImplementedException();
-        }
     }
 }

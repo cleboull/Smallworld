@@ -19,13 +19,5 @@ namespace SmallWorld
             defensePoints = 1;
             health = 5;
         }
-
-        public void setMovPoints(int movPoints);
-
-        public int getMovPoints();
-
-        public void reduceMovementPoints(Slot typeSlot);
-
-        public int getSlotPoints();
     }
 }
