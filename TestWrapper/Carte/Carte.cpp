@@ -22,6 +22,7 @@ void Carte::generer(){
 	int i;
 	map = new int [taille*taille];
 	srand (time(NULL));
+
 	for(i=0;i<taille*taille;i++)
 		map[i] = rand() % 5;
 }

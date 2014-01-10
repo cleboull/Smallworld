@@ -11,7 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
+using SmallWorld;
 namespace WPFInterface
 {
     /// <summary>
@@ -20,14 +20,13 @@ namespace WPFInterface
     public partial class GameWindow : Window
     {
         List<int> map;
+        Game game;
 
-        public GameWindow(List<int> _map)
+        public GameWindow(Game game)
         {
             InitializeComponent();
-            //map = .getMap()
-            map = _map;
+            map = game.getMap();
             FondCarte.Map = map;
-
         }
 
         private void FinPartie(object sender, RoutedEventArgs e)
@@ -43,7 +42,7 @@ namespace WPFInterface
             var pos = e.GetPosition(grid);
             var x = pos.X; //coordonnée x du click
             var y = pos.Y; //coordonnée y du click
-            int sizeMap = (int)Math.Sqrt(map.Count() - 1); //nombre de cases par côté
+            int sizeMap = (int)Math.Sqrt(map.Count()); //nombre de cases par côté
             int numSlot = ((int)y / 50) * sizeMap + ((int)x / 50); //numéro du slot correspondant au click
             Console.WriteLine(numSlot);
             int newSelectRectX = ((int)x / 50) * 50;

@@ -15,12 +15,12 @@
         <Button Name="NormaleButton" Content="Normale" HorizontalAlignment="Left" Height="40" Margin="418,159,0,0" VerticalAlignment="Top" Width="128" Click="Create_Map" Tag="Normale"/>
         <Label Content="Civilisation du joueur 1 :" HorizontalAlignment="Left" Margin="177,37,0,0" VerticalAlignment="Top"/>
         <Label Content="Civilisation du joueur 2 :" HorizontalAlignment="Left" Margin="177,77,0,0" VerticalAlignment="Top"/>
-        <ComboBox HorizontalAlignment="Left" Height="20" Margin="323,40,0,0" VerticalAlignment="Top" Width="98" >
+        <ComboBox x:Name="CivJ1Selected" HorizontalAlignment="Left" Height="20" Margin="323,40,0,0" VerticalAlignment="Top" Width="98" >
             <ComboBoxItem Content="Gaulois" IsSelected="True"/>
             <ComboBoxItem Content="Vikings"/>
             <ComboBoxItem Content="Nains"/>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Left" Height="20" Margin="323,80,0,0" VerticalAlignment="Top" Width="98">
+        <ComboBox x:Name="CivJ2Selected" HorizontalAlignment="Left" Height="20" Margin="323,80,0,0" VerticalAlignment="Top" Width="98">
             <ComboBoxItem Content="Gaulois" IsSelected="True"/>
             <ComboBoxItem Content="Vikings"/>
             <ComboBoxItem Content="Nains"/>

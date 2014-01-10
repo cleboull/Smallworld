@@ -10,4 +10,5 @@
 extern "C" 
 {
 	DLL int* genererMap(int taille);
+	DLL int* getPositionInit(int* map,int tailleMap);
 }

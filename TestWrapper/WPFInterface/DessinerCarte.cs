@@ -64,7 +64,7 @@ namespace WPFInterface
             if (Map != null)
             {
                 int sizeMap = Map.Count();
-                int size = (int)Math.Sqrt(sizeMap-1);
+                int size = (int)Math.Sqrt(sizeMap);
                 for (int x = 0; x < size; x++)
                 {
                     for (int y = 0; y < size; y++)

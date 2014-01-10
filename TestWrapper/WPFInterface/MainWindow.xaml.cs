@@ -31,14 +31,13 @@ namespace WPFInterface
 
         private void Create_Map(object sender, RoutedEventArgs e)
         {
-            String civ1 = ;
-            String civ2;
+            String civ1 = CivJ1Selected.Text;
+            String civ2 = CivJ2Selected.Text;
             String taille = ((Button)sender).Tag.ToString();
-            List<int> map;
 
             GameCreator gc = new GameCreator(civ1, civ2, taille);
-
-            GameWindow gameWindow = new GameWindow(map);
+            Game game = gc.getGame();
+            GameWindow gameWindow = new GameWindow(game);
             
             gameWindow.Show();
             this.Close();
