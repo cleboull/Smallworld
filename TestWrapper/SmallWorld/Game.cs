@@ -54,7 +54,7 @@ namespace SmallWorld
         {
             WrapperMap wm = new WrapperMap();
             
-            int[] positionUnit = wm.GetPositionUnit(intMap);
+            List<int> positionUnit = wm.GetPositionInit(intMap);
 
             placementUnitP1[positionUnit[0]] = player1.getUnitList();
             placementUnitP2[positionUnit[1]] = player2.getUnitList();
@@ -67,13 +67,37 @@ namespace SmallWorld
 
         public bool selectSlot(int intSlot)
         {
-            
+            if(currentPlayer == 1)
+            {
+                int nbUnit = placementUnitP1[intSlot].Count;
+                if (nbUnit > 0)
+                    return true;
+                return false;
+            }
+            else if (currentPlayer == 2)
+            {
+                int nbUnit = placementUnitP2[intSlot].Count;
+                if (nbUnit > 0)
+                    return true;
+                return false;
+            }
+            else
+                throw new Exception("Erreur Joueur courant");
         }
 
-        public void selectUnit(int intSlot)
+        public List<Unit> selectUnit(int intSlot)
         {
-            if(isUnitSelected == false && placementUnit;
-            unitSelected = unit;
+            if (currentPlayer == 1)
+                return placementUnitP1[intSlot];
+            else if (currentPlayer == 2)
+                return placementUnitP2[intSlot];
+            else
+                throw new Exception("Erreur Joueur courant");
+        }
+
+        public void deplaceUnit(Unit unit)
+        {
+            
         }
 
         public void deselectUnit()
