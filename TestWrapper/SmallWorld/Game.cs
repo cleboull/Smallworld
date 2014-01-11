@@ -20,6 +20,8 @@ namespace SmallWorld
         int firstPlayer = new int();
         List<Unit>[] placementUnitP1;
         List<Unit>[] placementUnitP2;
+        int pointsP1 = new int();
+        int pointsP2 = new int();
         List<int> intMap = new List<int>();
 
         Player player1;
@@ -36,6 +38,8 @@ namespace SmallWorld
             roundNumberMax = roundMax;
             unitSelected = null;
             isUnitSelected = false;
+            pointsP1 = 0;
+            pointsP2 = 0;
             nbUnitOnSlot = 0;
             possibleFight = false;
             possibleMovment = false;
@@ -67,19 +71,47 @@ namespace SmallWorld
 
         public bool selectSlot(int intSlot)
         {
-            
+            if(currentPlayer == 1)
+            {
+                int nbUnit = placementUnitP1[intSlot].Count;
+                if (nbUnit > 0)
+                    return true;
+                return false;
+            }
+            else if (currentPlayer == 2)
+            {
+                int nbUnit = placementUnitP2[intSlot].Count;
+                if (nbUnit > 0)
+                    return true;
+                return false;
+            }
+            else
+                throw new Exception("Erreur Joueur courant");
         }
 
-        public void selectUnit(int intSlot)
+        public List<Unit> selectUnit(int intSlot)
         {
-            if(isUnitSelected == false && placementUnit;
-            unitSelected = unit;
+            if (currentPlayer == 1)
+                return placementUnitP1[intSlot];
+            else if (currentPlayer == 2)
+                return placementUnitP2[intSlot];
+            else
+                throw new Exception("Erreur Joueur courant");
+        }
+
+        public void possibleDeplacement(Unit unit, Slot slotDest)
+        {
+
+        }
+
+        public void deplaceUnit(Unit unit)
+        {
+            
         }
 
         public void deselectUnit()
         {
             unitSelected = null;
-            isUnitSelected = false;
         }
 
         public void changePlayer()
@@ -89,7 +121,9 @@ namespace SmallWorld
 
         public void countPoints()
         {
+            //Joueur 1
 
+            
         }
 
         public void nextRound()
@@ -100,9 +134,14 @@ namespace SmallWorld
                 gameOver();
         }
 
-        public void setCurrentPlayer(int player)
+        public int getP1Points()
         {
-           currentPlayer = player;
+            return pointsP1;
+        }
+
+        public int getP2Points()
+        {
+            return pointsP2;
         }
 
         public Player getFirstPlayer()
