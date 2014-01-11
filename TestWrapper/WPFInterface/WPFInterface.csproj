@@ -143,10 +143,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\Debug\Carte.dll">
-      <Link>Carte.dll</Link>
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Resource Include="Resources\Fond ecran accueil.jpg" />
     <Resource Include="Resources\icone.ico" />
   </ItemGroup>

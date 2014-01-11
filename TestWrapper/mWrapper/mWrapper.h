@@ -1,9 +1,10 @@
 // mWrapper.h
-
+#pragma once
 #include "api.h"
-
+#pragma comment (lib, "Carte.lib")
 using namespace System;
 using namespace System::Collections::Generic;
+
 
 //comm mWrapper
 namespace mWrapper {
@@ -28,10 +29,10 @@ namespace mWrapper {
 				mapC[i]=map[i];
 			}
 
-			int * tmp = getPositionInit(mapC,tailleMap);
+			//int * tmp = getPositionInit(mapC,tailleMap);
 			List<int> ^ positions = gcnew List<int>();
-			positions[0]=tmp[0];
-			positions[1]=tmp[1];
+			//positions->Add(tmp[0]);
+			//positions->Add(tmp[1]);
 			return positions;
 		}
 	};
