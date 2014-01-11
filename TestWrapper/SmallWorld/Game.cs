@@ -20,8 +20,7 @@ namespace SmallWorld
         int firstPlayer = new int();
         List<Unit>[] placementUnitP1;
         List<Unit>[] placementUnitP2;
-        List<int> intMap;
-
+        List<int> intMap = new List<int>();
 
         Player player1;
         Player player2;
@@ -41,12 +40,13 @@ namespace SmallWorld
             possibleFight = false;
             possibleMovment = false;
             intMap = iMap;
-            map = mapConst;
 
             int taille=iMap.Count;
+            map = new Map(taille);
+            map = mapConst;
+            
             placementUnitP1 = new List<Unit>[taille];
             placementUnitP2 = new List<Unit>[taille];
-
             positionUnits();
         }
 
@@ -54,10 +54,10 @@ namespace SmallWorld
         {
             WrapperMap wm = new WrapperMap();
             
-            //int[] positionUnit = wm.GetPositionUnit(intMap);
+            int[] positionUnit = wm.GetPositionUnit(intMap);
 
-            placementUnitP1[/*positionUnit[0]*/0] = player1.getUnitList();
-            placementUnitP2[/*positionUnit[1]*/1] = player2.getUnitList();
+            placementUnitP1[positionUnit[0]] = player1.getUnitList();
+            placementUnitP2[positionUnit[1]] = player2.getUnitList();
         }
 
         public List<int> getMap()
@@ -65,14 +65,14 @@ namespace SmallWorld
             return intMap;
         }
 
-        public void selectSlot(Slot slot)
+        public bool selectSlot(int intSlot)
         {
             
         }
 
-        public void selectUnit(Unit unit)
+        public void selectUnit(int intSlot)
         {
-            isUnitSelected = true;
+            if(isUnitSelected == false && placementUnit;
             unitSelected = unit;
         }
 

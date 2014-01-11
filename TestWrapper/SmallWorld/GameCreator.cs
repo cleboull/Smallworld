@@ -10,13 +10,12 @@ namespace SmallWorld
     {
         private Game game;
 
-
         public GameCreator(string civ1, string civ2, string mapSize)
         {
             WrapperMap wm = new WrapperMap();
-            List<int> intMap;
-            int roundNumberMax;
-            int totalUnit;
+            List<int> intMap = new List<int>();
+            int roundNumberMax = new int();
+            int totalUnit = new int();
             Map map;
             switch (mapSize)
             {

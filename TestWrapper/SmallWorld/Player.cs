@@ -7,10 +7,10 @@ namespace SmallWorld
 {
     public class Player : I_Player
     {
-        private int points;
+        private int points = new int();
         private Civilization playerCiv;
-        private int totalUnit;
-        private List<Unit> unitList;
+        private int totalUnit = new int();
+        private List<Unit> unitList = new List<Unit>();
 
         public Player(string civ, int tUnit)
         {
@@ -28,8 +28,6 @@ namespace SmallWorld
                     playerCiv = new DwarfFactory();
                     break;
             }
-            unitList = new List<Unit>(); ;
-            totalUnit = new int();
             totalUnit = tUnit;
             int i;
             for (i = 0; i < totalUnit; i++)
