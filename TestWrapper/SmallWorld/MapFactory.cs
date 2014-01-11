@@ -7,11 +7,11 @@ namespace SmallWorld
 {
     public class MapFactory : I_MapFactory
     {
-        public Mountain mountain;
-        public Plain plain;
-        public Desert desert;
-        public Sea sea;
-        public Forest forest;
+        Mountain mountain;
+        Plain plain;
+        Desert desert;
+        Sea sea;
+        Forest forest;
 
         public void buildMap()
         {
@@ -22,14 +22,14 @@ namespace SmallWorld
             forest = new Forest();
         }
 
-        public Slot getSlot(int slotNumber){
-            switch (slotNumber)
+        public Slot getSlot(int slotType){
+            switch (slotType)
             {
-                case 1: return desert;
-                case 2: return forest;
-                case 3: return mountain;
-                case 4: return plain;
-                case 5: return sea;
+                case 0: return desert;
+                case 1: return forest;
+                case 2: return mountain;
+                case 3: return plain;
+                case 4: return sea;
                 default: throw new Exception("Problème lors de la génération aléatoire de la carte");
             }
         }

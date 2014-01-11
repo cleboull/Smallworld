@@ -14,6 +14,7 @@ namespace SmallWorld
 
         public Map(int nbSlot)
         {
+            matSlot = new Slot[nbSlot];
         }
     }
 }

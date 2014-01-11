@@ -29,10 +29,10 @@ namespace mWrapper {
 				mapC[i]=map[i];
 			}
 
-			//int * tmp = getPositionInit(mapC,tailleMap);
+			int * tmp = getPositionInit(mapC,tailleMap);
 			List<int> ^ positions = gcnew List<int>();
-			//positions->Add(tmp[0]);
-			//positions->Add(tmp[1]);
+			positions->Add(tmp[0]);
+			positions->Add(tmp[1]);
 			return positions;
 		}
 	};

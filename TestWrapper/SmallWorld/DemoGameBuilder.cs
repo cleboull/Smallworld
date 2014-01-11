@@ -18,6 +18,7 @@ namespace SmallWorld
         public void setMap(List<int> intMap)
         {
             map = new Map(25);
+            mapFactory = new MapFactory();
             int i;
             for (i = 0; i < 25; i++)
             {

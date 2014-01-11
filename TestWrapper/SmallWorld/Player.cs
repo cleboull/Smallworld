@@ -14,20 +14,22 @@ namespace SmallWorld
 
         public Player(string civ, int tUnit)
         {
-
+            points = new int();
             points = 0;
             switch (civ)
             {
-                case "viking":
+                case "Vikings":
                     playerCiv = new VikingFactory();
                     break;
-                case "gaulois":
+                case "Gaulois":
                     playerCiv = new GallicFactory();
                     break;
-                case "nain":
+                case "Nains":
                     playerCiv = new DwarfFactory();
                     break;
             }
+            unitList = new List<Unit>(); ;
+            totalUnit = new int();
             totalUnit = tUnit;
             int i;
             for (i = 0; i < totalUnit; i++)

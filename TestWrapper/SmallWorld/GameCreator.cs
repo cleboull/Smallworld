@@ -24,6 +24,7 @@ namespace SmallWorld
                     roundNumberMax = 5;
                     totalUnit = 4;
                     DemoGameBuilder demoGameBuilder = new DemoGameBuilder();
+                    map = new Map(25);
                     intMap = wm.CreateMapWrapper(5);
                     demoGameBuilder.setMap(intMap);
                     map = demoGameBuilder.getMap();
@@ -32,6 +33,7 @@ namespace SmallWorld
                     roundNumberMax = 20;
                     totalUnit = 6;
                     SmallGameBuilder smallGameBuilder = new SmallGameBuilder();
+                    map = new Map(100);
                     intMap = wm.CreateMapWrapper(10);
                     smallGameBuilder.setMap(intMap);
                     map = smallGameBuilder.getMap();
@@ -40,6 +42,7 @@ namespace SmallWorld
                     roundNumberMax = 30;
                     totalUnit = 8;
                     StandardGameBuilder standardGameBuilder = new StandardGameBuilder();
+                    map = new Map(225);
                     intMap = wm.CreateMapWrapper(15);
                     standardGameBuilder.setMap(intMap); 
                     map = standardGameBuilder.getMap();

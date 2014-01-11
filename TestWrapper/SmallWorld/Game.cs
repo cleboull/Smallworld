@@ -9,18 +9,19 @@ namespace SmallWorld
     public class Game : I_Game
     {
         Unit unitSelected;
-        bool isUnitSelected;
-        int nbUnitOnSlot;
-        bool slotTaken;
-        bool possibleMovment;
-        bool possibleFight;
-        int currentPlayer;
-        int currentRoundNumber;
-        int roundNumberMax;
-        int firstPlayer;
+        bool isUnitSelected = new bool();
+        int nbUnitOnSlot = new int();
+        bool slotTaken = new bool();
+        bool possibleMovment = new bool();
+        bool possibleFight = new bool();
+        int currentPlayer = new int();
+        int currentRoundNumber = new int();
+        int roundNumberMax = new int();
+        int firstPlayer = new int();
         List<Unit>[] placementUnitP1;
         List<Unit>[] placementUnitP2;
         List<int> intMap;
+
 
         Player player1;
         Player player2;
@@ -42,12 +43,17 @@ namespace SmallWorld
             intMap = iMap;
             map = mapConst;
 
+            int taille=iMap.Count;
+            placementUnitP1 = new List<Unit>[taille];
+            placementUnitP2 = new List<Unit>[taille];
+
             positionUnits();
         }
 
         public void positionUnits()
         {
             WrapperMap wm = new WrapperMap();
+            
             //int[] positionUnit = wm.GetPositionUnit(intMap);
 
             placementUnitP1[/*positionUnit[0]*/0] = player1.getUnitList();

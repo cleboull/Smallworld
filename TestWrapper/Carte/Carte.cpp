@@ -12,11 +12,11 @@ Carte::~Carte(void){
 }
 
 /*Génére une liste d'entier représentant le type de la case
-1 -> Desert
-2 -> Foret
-3 -> Montagne
-4 -> Plaine
-5 -> Mer
+0 -> Desert
+1 -> Foret
+2 -> Montagne
+3 -> Plaine
+4 -> Mer
 */
 void Carte::generer(){
 	int i;
