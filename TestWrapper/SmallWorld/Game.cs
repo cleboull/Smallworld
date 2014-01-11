@@ -58,7 +58,7 @@ namespace SmallWorld
         {
             WrapperMap wm = new WrapperMap();
             
-            int[] positionUnit = wm.GetPositionUnit(intMap);
+            List<int> positionUnit = wm.GetPositionInit(intMap);
 
             placementUnitP1[positionUnit[0]] = player1.getUnitList();
             placementUnitP2[positionUnit[1]] = player2.getUnitList();
@@ -112,6 +112,7 @@ namespace SmallWorld
         public void deselectUnit()
         {
             unitSelected = null;
+            isUnitSelected = false;
         }
 
         public void changePlayer()
