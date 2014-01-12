@@ -50,7 +50,7 @@ namespace SmallWorld
                     throw new Exception("Mauvais type de carte");
             }
             Random rnd = new Random();
-            int firstPlayer= rnd.Next(2);
+            int firstPlayer= rnd.Next(2)+1;
             game = new Game(civ1, civ2, totalUnit, firstPlayer, map, intMap, roundNumberMax);
         }
 

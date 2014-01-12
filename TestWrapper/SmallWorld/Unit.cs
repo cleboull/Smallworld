@@ -7,10 +7,10 @@ namespace SmallWorld
 {
     public abstract class Unit : SmallWorld.I_Unit
     {
-        private int movementPoints;
-        private int powerPoints;
-        private int defensePoints;
-        private int health;
+        private int movementPoints = new int();
+        private int powerPoints = new int();
+        private int defensePoints = new int();
+        private int health = new int();
 
         public Unit()
         {
@@ -18,6 +18,38 @@ namespace SmallWorld
             powerPoints = 2;
             defensePoints = 1;
             health = 5;
+        }
+
+
+
+        public int getPDV()
+        {
+            return health;
+        }
+
+        public void setPDV(int pdv)
+        {
+            health = pdv;
+        }
+
+        public int getDEF()
+        {
+            return defensePoints;
+        }
+
+        public int getATK()
+        {
+            return powerPoints;
+        }
+
+        public int getMOV()
+        {
+            return movementPoints;
+        }
+
+        public void setMOV(int mov)
+        {
+            movementPoints = mov;
         }
     }
 }

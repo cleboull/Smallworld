@@ -50,6 +50,14 @@ namespace WPFInterface
         //{
         //    DefaultStyleKeyProperty.OverrideMetadata(typeof(DessinerCarte), new FrameworkPropertyMetadata(typeof(DessinerCarte)));
         //}
+
+        public List<int> Map { get; set; }
+        int[] posUnitJ1 = new int[15];
+        int nbUnitJ1;
+        int[] posUnitJ2 = new int[15];
+        int nbUnitJ2;
+        
+
         Brush[] brushes = { Brushes.Blue, Brushes.Red, Brushes.Green, Brushes.Black, Brushes.Pink };
         ImageSource[] images = {
                     new BitmapImage(new Uri(@"..\..\Resources\desert.png",UriKind.Relative)),
@@ -58,6 +66,9 @@ namespace WPFInterface
                     new BitmapImage(new Uri(@"..\..\Resources\plaine.png",UriKind.Relative)),
                     new BitmapImage(new Uri(@"..\..\Resources\sea.png",UriKind.Relative))
                     };
+
+        ImageSource J1 = new BitmapImage(new Uri(@"..\..\Resources\coulJ1.png", UriKind.Relative));
+        ImageSource J2 = new BitmapImage(new Uri(@"..\..\Resources\coulJ2.png", UriKind.Relative));
 
         protected override void OnRender(DrawingContext drawingContext)
         {
@@ -78,10 +89,30 @@ namespace WPFInterface
                     default: margin = 0; break;                       
                 }
                 this.Margin = new Thickness(margin,margin, this.Margin.Right, this.Margin.Bottom);
+
+                //Dessiner les unités
+                int i;
+                for(i = 0; i < nbUnitJ1; i++)
+                    drawingContext.DrawImage(J1, new Rect((posUnitJ1[i] % size)*50 + 10, ((posUnitJ1[i]/size))*50 + 10, 30, 30));
+                for(i = 0; i < nbUnitJ2; i++)
+                    drawingContext.DrawImage(J2, new Rect((posUnitJ2[i] % size)*50 + 10, ((posUnitJ2[i]/size))*50 + 10, 30, 30));
             }           
             base.OnRender(drawingContext);
         }
+
+        public void setPosUnitJ1(int[] unitPosList,int nbUnit)
+        {
+            posUnitJ1 = unitPosList;
+            nbUnitJ1 = nbUnit;
+        }
+
+        public void setPosUnitJ2(int[] unitPosList, int nbUnit)
+        {
+            posUnitJ2 = unitPosList;
+            nbUnitJ2 = nbUnit;
+        }
+
         
-        public List<int> Map { get; set; }
+        
     }
 }

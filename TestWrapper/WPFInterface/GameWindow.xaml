@@ -6,14 +6,14 @@
         Title="GameWindow" WindowStartupLocation="CenterScreen"  ShowInTaskbar="False"  SizeToContent="WidthAndHeight">
     <Grid Margin="0,0,0,0" Height="800" Width="1000">
         <Canvas HorizontalAlignment="Left" Height="800" VerticalAlignment="Top" Width="800" Margin="0">
-            <Image Source="Resources/joli (1).png" Width="800" Height="800" />
             <local:DessinerCarte  x:Name="FondCarte"  HorizontalAlignment="Left" VerticalAlignment="Top" ClipToBounds="True" Canvas.Left="25" Canvas.Top="25" Width="750" Height="750" MouseLeftButtonDown="FondCarte_MouseLeftButtonDown_1" Margin="0">
                 <Border x:Name="SelectRect" BorderBrush="LightBlue" BorderThickness="4" HorizontalAlignment="Left" Height="50" Margin="0" VerticalAlignment="Top" Width="50" IsEnabled="False" Visibility="Hidden"/>
             </local:DessinerCarte>
+            <Label Name="labelMsg" Content="Message box" Canvas.Left="10" Canvas.Top="774" Width="790"/>
         </Canvas>
         <Canvas HorizontalAlignment="Right" Height="800" Margin="817,0,0,0" VerticalAlignment="Top" Width="200">
-            <Label Content="Joueur 1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="62" Canvas.Left="73" Canvas.Top="598"/>
-            <Label Content="Tour 1/5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="62" Canvas.Left="73" Canvas.Top="624"/>
+            <Label Name="labelJoueur" Content="Tour du Joueur 1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Canvas.Left="50" Canvas.Top="598"/>
+            <Label Name="labelTour" Content="Tour 1/5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Canvas.Left="55" Canvas.Top="624"/>
             <Grid Height="84" Canvas.Left="50" Canvas.Top="509" Width="100">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
@@ -21,12 +21,26 @@
                 </Grid.ColumnDefinitions>
                 <Label Content="Points" HorizontalAlignment="Left" VerticalAlignment="Top" Width="44" Margin="34,0,0,0" Grid.Column="1"/>
                 <Label Content="Joueur 1 :" HorizontalAlignment="Left" VerticalAlignment="Top" Width="62" Margin="0,31,0,0" Grid.ColumnSpan="2"/>
-                <Label x:Name="J1Score" Content="Label" Margin="61,31,0,26" Grid.Column="1"/>
+                <Label x:Name="J1Score" Content="0" Margin="61,31,0,26" Grid.Column="1" FontWeight="Medium"/>
                 <Label Content="Joueur 2 :" HorizontalAlignment="Left" VerticalAlignment="Top" Width="62" Margin="0,57,0,0" Grid.ColumnSpan="2"/>
-                <Label x:Name="J2Score" Content="Label" Margin="61,57,0,0" Grid.Column="1"/>
+                <Label x:Name="J2Score" Content="0" Margin="61,57,0,0" Grid.Column="1" FontWeight="Medium" VerticalAlignment="Center"/>
             </Grid>
             <Button Content="Fin du Tour" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="95" Height="30" Canvas.Left="55" Canvas.Top="686" Click="EndTurn_Click" />
             <Button Content="Fin de partie" Click="FinPartie"  HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="95" Height="30" Canvas.Left="55" Canvas.Top="741"  />
+            <Label Content="Unité sur la case sélectionnée :" Canvas.Left="10" Canvas.Top="23"/>
+            <ListBox SelectionChanged="unitChange" Name="listBoxUnit" Height="156" Canvas.Left="23" Canvas.Top="70" Width="149"/>
+            <Label Content="Caractéristique de l'unité&#xD;&#xA;sélectionnée :" Canvas.Left="10" Canvas.Top="237" Height="48" Width="181"/>
+            <Label Content="Vie :" Canvas.Left="10" Canvas.Top="319" Width="34"/>
+            <Label Content="Attaque :" Canvas.Left="10" Canvas.Top="348" Width="62"/>
+            <Label Content="Défense :" Canvas.Left="10" Canvas.Top="379" Width="64"/>
+            <Label Name="labelPDV" Content="-" Canvas.Left="50" Canvas.Top="319" Width="22"/>
+            <Label Name="labelATK" Content="-" Canvas.Left="78" Canvas.Top="348" Width="17"/>
+            <Label Name="labelDEF" Content="-" Canvas.Left="79" Canvas.Top="379" Width="16"/>
+            <Label Name="civJ1" Content="Civ J1" Canvas.Left="10" Canvas.Top="453"/>
+            <Label Name="civJ2" Content="Civ J2" Canvas.Left="10" Canvas.Top="483"/>
+            <Label Name="unitSelect" Content="" Canvas.Left="11" Canvas.Top="285"/>
+            <Label Content="Déplacement :" Canvas.Left="10" Canvas.Top="410" Width="85"/>
+            <Label x:Name="labelMOV" Content="-" Canvas.Left="100" Canvas.Top="410" Width="16"/>
         </Canvas>
 
     </Grid>

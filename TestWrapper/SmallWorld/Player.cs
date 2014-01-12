@@ -7,25 +7,26 @@ namespace SmallWorld
 {
     public class Player : I_Player
     {
-        private int points = new int();
+        private String civil;
         private Civilization playerCiv;
         private int totalUnit = new int();
         private List<Unit> unitList = new List<Unit>();
 
         public Player(string civ, int tUnit)
         {
-            points = new int();
-            points = 0;
             switch (civ)
             {
                 case "Vikings":
                     playerCiv = new VikingFactory();
+                    civil = "Vikings";
                     break;
                 case "Gaulois":
                     playerCiv = new GallicFactory();
+                    civil = "Gaulois";
                     break;
                 case "Nains":
                     playerCiv = new DwarfFactory();
+                    civil = "Nains";
                     break;
             }
             totalUnit = tUnit;
@@ -36,14 +37,14 @@ namespace SmallWorld
             }
         }
 
+        public string getCiv()
+        {
+            return civil;
+        }
+
         public List<Unit> getUnitList()
         {
             return unitList;
-        }
-
-        public int getPoints()
-        {
-            return points;
         }
 
         public void resetMovmentPoints()

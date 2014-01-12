@@ -91,10 +91,18 @@
     <None Include="interface.cd" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\mWrapper\mWrapper.vcxproj">
       <Project>{54025496-17fa-43f1-b37f-af5ea4792b5f}</Project>
       <Name>mWrapper</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Debug\mWrapper.dll">
+      <Link>mWrapper.dll</Link>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

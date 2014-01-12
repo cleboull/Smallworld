@@ -146,6 +146,16 @@
     <Resource Include="Resources\Fond ecran accueil.jpg" />
     <Resource Include="Resources\icone.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Debug\mWrapper.dll">
+      <Link>mWrapper.dll</Link>
+    </Content>
+    <Content Include="..\Debug\SmallWorld.dll">
+      <Link>SmallWorld.dll</Link>
+    </Content>
+    <Resource Include="Resources\coulj1.png" />
+    <Resource Include="Resources\coulj2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
