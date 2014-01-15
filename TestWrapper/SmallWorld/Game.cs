@@ -287,7 +287,7 @@ namespace SmallWorld
 
         public bool isGameOver()
         {
-            return (currentRoundNumber + 1 == roundNumberMax);
+            return (currentRoundNumber > roundNumberMax);
         }
 
         public int getP1Points()
@@ -311,9 +311,9 @@ namespace SmallWorld
         public string getWinner()
         {
             if (pointsP1 > pointsP2)
-                return "player1";
+                return "Joueur 1";
             else if (pointsP1 < pointsP2)
-                return "player2";
+                return "Joueur 2";
             else
                 return "draw";
         }

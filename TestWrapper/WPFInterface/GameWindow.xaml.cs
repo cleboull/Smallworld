@@ -141,7 +141,11 @@ namespace WPFInterface
             listBoxUnit.Items.Clear();
             isUnitSelected = false;
             majLabelUnit();
-
+            if (game.isGameOver())
+            {
+                FinalWindow fwin = new FinalWindow(game.getWinner());
+                fwin.Show();
+            }
         }
 
         private void unitChange(object sender, SelectionChangedEventArgs e)
