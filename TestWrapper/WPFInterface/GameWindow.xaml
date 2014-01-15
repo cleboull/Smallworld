@@ -4,6 +4,9 @@
         xmlns:local="clr-namespace:WPFInterface" x:Class="WPFInterface.GameWindow"
         Icon="./Resources/icone.ico"
         Title="GameWindow" WindowStartupLocation="CenterScreen"  ShowInTaskbar="False"  SizeToContent="WidthAndHeight">
+    <Window.Background>
+        <ImageBrush ImageSource="Resources/Fond.jpg" Stretch="UniformToFill"/>
+    </Window.Background>
     <Grid Margin="0,0,0,0" Height="800" Width="1000">
         <Canvas HorizontalAlignment="Left" Height="800" VerticalAlignment="Top" Width="800" Margin="0">
             <local:DessinerCarte  x:Name="FondCarte"  HorizontalAlignment="Left" VerticalAlignment="Top" ClipToBounds="True" Canvas.Left="25" Canvas.Top="25" Width="750" Height="750" MouseLeftButtonDown="FondCarte_MouseLeftButtonDown_1" Margin="0">
@@ -25,7 +28,7 @@
                 <Label Content="Joueur 2 :" HorizontalAlignment="Left" VerticalAlignment="Top" Width="62" Margin="0,57,0,0" Grid.ColumnSpan="2"/>
                 <Label x:Name="J2Score" Content="0" Margin="61,57,0,0" Grid.Column="1" FontWeight="Medium" VerticalAlignment="Center"/>
             </Grid>
-            <Button Content="Fin du Tour" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="95" Height="30" Canvas.Left="55" Canvas.Top="686" Click="EndTurn_Click" />
+            <Button Name="finTourBouton" Content="Fin du Tour" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="95" Height="30" Canvas.Left="55" Canvas.Top="686" Click="EndTurn_Click" />
             <Button Content="Fin de partie" Click="FinPartie"  HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="95" Height="30" Canvas.Left="55" Canvas.Top="741"  />
             <Label Content="Unité sur la case sélectionnée :" Canvas.Left="10" Canvas.Top="23"/>
             <ListBox SelectionChanged="unitChange" Name="listBoxUnit" Height="156" Canvas.Left="23" Canvas.Top="70" Width="149"/>

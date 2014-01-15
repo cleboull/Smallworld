@@ -8,13 +8,22 @@ namespace SmallWorld
 {
     public class Map : SmallWorld.I_Map
     {
-        public Slot[] matSlot;
-
-        public MapFactory MapFactory;
+        private Slot[] matSlot;
+        private MapFactory MapFactory;
 
         public Map(int nbSlot)
         {
             matSlot = new Slot[nbSlot];
+        }
+
+        public void setSlot(int i, Slot slot)
+        {
+            matSlot[i] = slot;
+        }
+
+        public Slot getSlot(int i)
+        {
+            return matSlot[i];
         }
     }
 }

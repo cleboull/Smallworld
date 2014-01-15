@@ -5,36 +5,8 @@ using System.Text;
 
 namespace SmallWorld
 {
-    public class Slot : I_Slot
+    public abstract class Slot : I_Slot
     {
-   /*     public Unit strongestUnit()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public List<Unit> selectUnitList()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public bool slotTaken()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void removeUnit(Unit unitSelected)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public int countPointsSlot(Civilization civ)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void addUnit()
-        {
-            throw new System.NotImplementedException();
-        }*/
+        public abstract string getType();
     }
 }

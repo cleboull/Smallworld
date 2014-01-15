@@ -7,5 +7,9 @@ namespace SmallWorld
 {
     public class Sea : Slot, I_Sea
     {
+        public override string getType()
+        {
+            return "Sea";
+        }
     }
 }

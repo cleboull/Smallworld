@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using SmallWorld;
+
 namespace WPFInterface
 {
     /// <summary>
@@ -91,6 +92,7 @@ namespace WPFInterface
                 unitList=null;
                 listBoxUnit.Items.Clear();
                 labelMsg.Content = "Case désélectionnée";
+                majLabelUnit();
             }
 
             else if (SelectRect.Visibility == Visibility.Visible && isUnitSelected == true)//une case est selec et une unité aussi
@@ -105,8 +107,6 @@ namespace WPFInterface
                     FondCarte.InvalidateVisual();//permet de rafraichir la carte
                     labelMsg.Content = "Déplacement effectué";
                 }
-                else
-                    labelMsg.Content = "Déplacement impossible : plus de point de déplacement OU case trop éloignée";
             }
 
             else if (SelectRect.Visibility == Visibility.Hidden && isUnitSelected == false)//une case et pas de case selec
@@ -143,8 +143,10 @@ namespace WPFInterface
             majLabelUnit();
             if (game.isGameOver())
             {
+                finTourBouton.IsEnabled = false;
                 FinalWindow fwin = new FinalWindow(game.getWinner());
                 fwin.Show();
+                this.Close();
             }
         }
 

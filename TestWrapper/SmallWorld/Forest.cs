@@ -7,5 +7,9 @@ namespace SmallWorld
 {
     public class Forest : Slot, I_Forest
     {
+        public override string getType()
+        {
+            return "Forest";
+        }
     }
 }

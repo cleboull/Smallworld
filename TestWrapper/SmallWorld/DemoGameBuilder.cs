@@ -22,7 +22,7 @@ namespace SmallWorld
             int i;
             for (i = 0; i < 25; i++)
             {
-                map.matSlot[i] = mapFactory.getSlot(intMap[i]);
+                map.setSlot(i, mapFactory.getSlot(intMap[i]));
             }
         }
 

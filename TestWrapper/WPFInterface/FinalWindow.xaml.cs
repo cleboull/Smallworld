@@ -27,5 +27,12 @@ namespace WPFInterface
             else
                 winnerLabel.Content = "Victoire du " + winner + " !";
         }
+
+        private void finPartie_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
+        }
     }
 }

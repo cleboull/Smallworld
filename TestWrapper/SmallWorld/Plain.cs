@@ -7,5 +7,9 @@ namespace SmallWorld
 {
     public class Plain : Slot, I_Plain
     {
+        public override string getType()
+        {
+            return "Plain";
+        }
     }
 }

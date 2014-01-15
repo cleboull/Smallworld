@@ -212,12 +212,27 @@ namespace SmallWorld
                     if ((x0 == x1 || y1 == y0) &&
                         ((Math.Abs(x0 - x1) == 1 && !(((x0 % size) == 0 && (x1 + 1) % size == 0) || ((x1 % size) == 0 && (x0 + 1) % size == 0)))
                         || ((Math.Abs(y0 - y1) == 1 && !(((y0 % size) == 0 && (y1 + 1) % size == 0) || ((y1 % size) == 0 && (y0 + 1) % size == 0))))))
-                    //Déplacement autorisé !
+                    //La case sélectionnée est une case adjacente
                     {
-                        placementUnitP1[intSlotOrigin].Remove(unit);
-                        placementUnitP1[intSlotDest].Add(unit);
-                        unit.setMOV(0);
-                        return true;
+                        if (placementUnitP2[intSlotDest].Count != 0)
+                            combat(intSlotOrigin, intSlotDest);
+                        if (placementUnitP2[intSlotDest].Count != 0)//on regarde s'il reste des unités ennemies sur la case destination
+                        {
+                            if (player1.getCiv() == "Vikings" && intMap[intSlotDest] == 4)
+                                return false;
+                            else
+                            {
+                                placementUnitP1[intSlotOrigin].Remove(unit);
+                                placementUnitP1[intSlotDest].Add(unit);
+                                unit.setMOV(0);
+                                return true;
+                            }
+                        }
+                        else
+                        {
+                            unit.setMOV(0);
+                            return false;
+                        }
                     }
                 }
                 else if (currentPlayer == 2)
@@ -229,16 +244,36 @@ namespace SmallWorld
                     if ((x0 == x1 || y1 == y0) &&
                         ((Math.Abs(x0 - x1) == 1 && !(((x0 % size) == 0 && (x1 + 1) % size == 0) || ((x1 % size) == 0 && (x0 + 1) % size == 0)))
                         || ((Math.Abs(y0 - y1) == 1 && !(((y0 % size) == 0 && (y1 + 1) % size == 0) || ((y1 % size) == 0 && (y0 + 1) % size == 0))))))
-                    //Déplacement autorisé !
+                    //La case sélectionnée est une case adjacente
                     {
-                        placementUnitP2[intSlotOrigin].Remove(unit);
-                        placementUnitP2[intSlotDest].Add(unit);
-                        unit.setMOV(0);
-                        return true;
+                        if (placementUnitP1[intSlotDest].Count != 0)
+                            combat(intSlotOrigin, intSlotDest);
+                        if (placementUnitP1[intSlotDest].Count != 0)//on regarde s'il reste des unités ennemies sur la case destination
+                        {
+                            if (player2.getCiv() == "Vikings" && intMap[intSlotDest] == 4)
+                                return false;
+                            else
+                            {
+                                placementUnitP2[intSlotOrigin].Remove(unit);
+                                placementUnitP2[intSlotDest].Add(unit);
+                                unit.setMOV(0);
+                                return true;
+                            }
+                        }
+                        else
+                        {
+                            unit.setMOV(0);
+                            return false;
+                        }
                     }
                 }
             }
             return false;
+        }
+
+        public void combat(int intSlotAtk, int intSlotDef)
+        {
+
         }
 
         public void resetMovPoints()
@@ -273,15 +308,73 @@ namespace SmallWorld
 
         public void countPoints()
         {
+            int size = (int)Math.Sqrt(sizeMap);
+            int i = 0;
             foreach (List<Unit> unitList in placementUnitP1)
             {
+                
                 if (unitList.Count != 0)
-                    pointsP1 += 1;
+                {
+                    if (player1.getCiv() == "Gaulois")
+                    {
+                        if (intMap[i] == 3)//3 Correspond à une plaine
+                            pointsP1 += unitList.Count * 2;
+                        else if (intMap[i] != 2)//2 Correspond à montagne
+                            pointsP1 += unitList.Count;
+                    }
+                    if (player1.getCiv() == "Vikings")
+                    {
+                        if(((i-size >= 0 && intMap[i-size] == 4)
+                            || (i+size < sizeMap && intMap[i+size] == 4)
+                            || (i%size != 0 && i!=sizeMap && intMap[i-1] == 4)
+                            || ( (i+1)% size != 0 && i!=0 && intMap[i+1] == 4)) && (intMap[i] != 0 && intMap[i] != 4))
+                            pointsP1 += unitList.Count * 2;
+
+                        else if(intMap[i] != 0 && intMap[i] != 4)//Desert ou Eau
+                            pointsP1 += unitList.Count;
+                    }
+                    if (player1.getCiv() == "Nains")
+                    {
+                        if (intMap[i] == 1)//1 Correspond à Foret
+                            pointsP1 += unitList.Count * 2;
+                        else if (intMap[i] != 3)//3 Correspond à Plaine
+                            pointsP1 += unitList.Count;
+                    }
+                }
+                i++;
             }
+            i = 0;
             foreach (List<Unit> unitList in placementUnitP2)
             {
                 if (unitList.Count != 0)
-                    pointsP2 += 1;
+                {
+                    if (player2.getCiv() == "Gaulois")
+                    {
+                        if (intMap[i] == 3)//3 Correspond à une plaine
+                            pointsP2 += unitList.Count * 2;
+                        else if (intMap[i] != 2)//2 Correspond à montagne
+                            pointsP2 += unitList.Count;
+                    }
+                    if (player2.getCiv() == "Vikings")
+                    {
+                        if (((i - size >= 0 && intMap[i - size] == 4)
+                            || (i + size < sizeMap && intMap[i + size] == 4)
+                            || (i % size != 0 && i != sizeMap && intMap[i - 1] == 4)
+                            || ((i + 1) % size != 0 && i != 0 && intMap[i + 1] == 4)) && (intMap[i] != 0 && intMap[i] != 4))
+                            pointsP2 += unitList.Count * 2;
+
+                        else if (intMap[i] != 0 && intMap[i] != 4)//Desert ou Eau
+                            pointsP2 += unitList.Count;
+                    }
+                    if (player2.getCiv() == "Nains")
+                    {
+                        if (intMap[i] == 1)//1 Correspond à Foret
+                            pointsP2 += unitList.Count * 2;
+                        else if (intMap[i] != 3)//3 Correspond à Plaine
+                            pointsP2 += unitList.Count;
+                    }
+                }
+                i++;
             }
         }
 
